@@ -1,0 +1,121 @@
+/* Styling photo grid
+Box-shadows, open-link on hover, transform-scale on hover */
+.gallery 
+{
+	display: grid;
+	margin: 5% auto -10px auto;
+	max-width: 70%;
+
+	grid-template-columns: repeat(auto, 1fr);
+	grid-template-rows: repeat(7, 5vw);
+	grid-gap: 17px;
+}
+
+/* Make images fit to gridboxes, maintain width and 
+height ratio, and add a transform transition (see below) */
+.image 
+{
+	margin: 0px;
+	transition: transform;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;    
+}
+
+/* Made a separate selector for item3 of the gridbox because I wanted to 
+exclude a box-shadow for it. I tried to use :not(.item3) but couldn't
+implement it sadly T-T. Otherwise it's the exact same as the 
+previous .image selector. */
+.image_1
+{
+	margin: 0px;
+	transition: transform;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;    
+}
+
+/* positioning all photos within the grid */
+.item1 
+{
+	margin: 0px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.item2 
+{
+	margin: 0px;
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.item3 
+{
+	margin: 0px;
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.item4 
+{
+	margin: 0px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 7;
+}
+
+.item5 
+{
+	margin: 0px;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 4;
+	grid-row-end: 7;
+}
+
+/* box-shadow on all photos on hover (excluding item3) */
+.image:hover
+{
+	box-shadow: 0px 0px 20px 3px #f79cc6; 
+}
+
+/* scale transformations for item3 and item4 */
+.item3:hover
+{
+	transform: scale(1.1);
+}
+
+.item4:hover
+{
+	transform: scale(1.07);
+}
+
+/* Styling main textbox */
+.maintext 
+{
+	display: flexbox;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	padding: 25px;
+	margin: 10%;
+	margin-top: -3%;
+
+	background-color: aliceblue;
+	border-width: 8px;
+	border-style: dotted;
+	border-color: rgb(90, 114, 160);
+
+	font-size: 25px;
+	font-family: Sniglet;
+	color:rgb(90, 114, 160);
+	line-height: 70px;
+}
