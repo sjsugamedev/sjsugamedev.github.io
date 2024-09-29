@@ -10,8 +10,8 @@ body {
 
 /* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
 .container {
-  width: 1440px;
-  height: 2357px; /* 2030px + 327ox */
+  /* width: 90rem; */
+  /* height: 147.313rem; 2030px + 327ox */
   margin: 0 auto;
   background: linear-gradient(
     180deg,
@@ -217,7 +217,7 @@ body {
 }
 
 .our-officers-section {
-  width: 1440px;
+  /* width: 1440px; */
   height: 2357px; /* 2030px + 327ox */
   margin: 0 auto;
   background: #feb81a;
