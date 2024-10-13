@@ -1,15 +1,13 @@
 /* Global Reset Margin and Padding */
 * {
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: black;
-}
-
-/* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
-.container {
+  width: 1440px;
+  height: auto;
   margin: 0 auto;
   background: linear-gradient(
     180deg,
@@ -17,8 +15,10 @@ body {
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-  );
+    );
 }
+
+/* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
 
 /* "About Us" Title Part */
 .about-us-title {
@@ -271,49 +271,4 @@ header {
 
 .about-container {
   justify-content: center;
-}
-
-/* Container for all officers */
-
-.our-officers {
-  margin-left: 10rem;
-  margin-top: 45.625rem;
-
-  font-size: 3.125rem;
-  font-family: sans-serif;
-  font-weight: bolder;
-  color: #fff;
-}
-
-.our-officers-section {
-  height: 147.313rem; 
-  margin: 0 auto;
-  background: #FFFFFF;
-}
-
-.officers-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.25rem;
-  max-width: 75rem;
-  margin: 0 auto;
-}
-
-/* Individual officer box */
-.officer {
-background-color: white;
-color: black;
-border-radius: 0.5rem;
-padding: 0.625rem;
-width: 25rem;
-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.officer-image {
-background-color: #cccccc;
-height: 9.375rem;
-width: 100%;
-border-radius: 0.5rem;
-margin-bottom: 0.625rem;
 }
