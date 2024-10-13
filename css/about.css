@@ -10,8 +10,6 @@ body {
 
 /* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
 .container {
-  /* width: 90rem; */
-  /* height: 147.313rem; 2030px + 327ox */
   margin: 0 auto;
   background: linear-gradient(
     180deg,
@@ -25,7 +23,7 @@ body {
 /* "About Us" Title Part */
 .about-us-title {
   /* About Us Page Title */
-  font-size: 47px;
+  font-size: 2.938rem;
   font-family: sans-serif;
   font-weight: 100;
   text-align: center;
@@ -36,42 +34,42 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%; /* Width of the banner image*/
-  height: 410px; /* Height of the banner image*/
+  height: 25.625rem; /* Height of the banner image*/
 }
 
 /* "About Us" Title Text */
 .about-us-title-text {
-  padding-top: 250px;
-  padding-bottom: 0px;
+  padding-top: 16.188rem;
+  padding-bottom: 0rem;
   font-weight: bold;
 }
 
 /* Club's Statement Part */
 .club-statement {
-  margin-left: 161px;
-  margin-right: 160px;
-  margin-top: 112px;
-  margin-bottom: 128px;
+  margin-left: 10.063rem;
+  margin-right: 10rem;
+  margin-top: 7rem;
+  margin-bottom: 8rem;
 }
 
 /* Club's Statement Text */
 .club-statement-text {
-  font-size: 25px;
+  font-size: 1.563rem;
   font-family: sans-serif;
   font-weight: 600;
   color: #fff;
 
-  line-height: 40px;
+  line-height: 2.5rem;
 }
 
 /* What We Provide Part */
 /* What We Provide Title */
 .what-we-provide-title {
-  margin-left: 161px;
-  margin-right: 946px;
-  margin-bottom: 18px;
+  margin-left: 10.063rem;
+  margin-right: 59.125rem;
+  margin-bottom: 1.125rem;
 
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: sans-serif;
   font-weight: 600;
   color: #fff;
@@ -79,28 +77,28 @@ body {
 
 /* What We Provide Text */
 .what-we-provide-text {
-  margin-left: 161px;
-  margin-right: 640px;
-  margin-bottom: 103px;
+  margin-left: 10.063rem;
+  margin-right: 40rem;
+  margin-bottom: 6.438rem;
 
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: sans-serif;
   font-weight: 500;
   color: #fff;
 
-  width: 639px;
-  height: 118px;
-  line-height: 25px;
+  width: 39.938rem;
+  height: 7.375rem;
+  line-height: 1.563rem;
 }
 
 /* Where We Meet Part */
 /* Where We Meet Title */
 .where-we-meet-title {
-  margin-left: 704px;
-  margin-right: 449px;
-  margin-bottom: 13px;
+  margin-left: 44rem;
+  margin-right: 28.063rem;
+  margin-bottom: 0.813rem;
 
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: sans-serif;
   font-weight: 600;
   color: #fff;
@@ -108,16 +106,16 @@ body {
 
 /* Where We Meet Text */
 .where-we-meet-text {
-  margin-left: 704px;
-  margin-right: 201px;
-  margin-bottom: 95px;
+  margin-left: 44rem;
+  margin-right: 12.563rem;
+  margin-bottom: 5.938rem;
 
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: sans-serif;
   font-weight: 500;
   color: #fff;
 
-  line-height: 25px;
+  line-height: 1.563rem;
 }
 
 /* Discord Link */
@@ -147,80 +145,63 @@ body {
 
 /* Methods to LL */
 .methods-to-ll {
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
 }
 /* Elevator Part */
 .methods-elevator {
-  margin-left: 704px;
+  margin-left: 44rem;
 
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: sans-serif;
   color: #fff;
 }
 
 .methods-elevator-title {
-  font-size: 17px;
-  margin-bottom: 10px;
+  font-size: 1.063rem;
+  margin-bottom: 0.625rem;
 }
 
 .methods-elevator-list {
-  margin-left: 30px;
-  margin-right: 160px;
+  margin-left: 1.875rem;
+  margin-right: 0.625rem;
 
-  padding-right: 10px;
+  padding-right: 0.625rem;
 
-  line-height: 25px;
+  line-height: 1.563rem;
 }
 
 /* Stairs Part */
 .methods-stairs {
-  margin-left: 704px;
-  margin-top: 20px;
+  margin-left: 44rem;
+  margin-top: 1.25rem;
 
-  font-size: 17px;
+  font-size: 1.063rem;
   font-family: sans-serif;
   color: #fff;
 }
 
 .methods-stairs-title {
-  font-size: 17px;
-  margin-bottom: 10px;
+  font-size: 1.063rem;
+  margin-bottom: 0.625rem;
 }
 
 .methods-stairs-list {
-  margin-left: 30px;
-  margin-right: 175px;
+  margin-left: 1.875rem;
+  margin-right: 10.938rem;
 
-  padding-right: 10px;
+  padding-right: 0.625rem;
 
-  line-height: 25px;
+  line-height: 1.563rem;
 }
 
 /* MLK Library Images Part */
 .mlk-images {
-  margin-left: 168px;
+  margin-left: 10.5rem;
   float: left; /* Make the MLK Images Float Left of Where We Meet */
 }
 
 .mlk-images-entrance {
-  margin-bottom: 41px;
-}
-
-.our-officers {
-  margin-left: 160px;
-  margin-top: 730px;
-
-  font-size: 50px;
-  font-family: sans-serif;
-  font-weight: bolder;
-  color: #fff;
-}
-
-.our-officers-section {
-  /* width: 1440px; */
-  height: 2357px; /* 2030px + 327ox */
-  margin: 0 auto;
-  background: #feb81a;
+  margin-bottom: 2.563rem;
 }
 
 /* navbar css  */
@@ -235,7 +216,7 @@ li,
 a {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
 }
@@ -251,18 +232,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 3%;
+  padding: 0.625rem 3%;
 }
 
 .logo {
-  margin-right: 10px;
-  width: 70px;
+  margin-right: 0.625rem;
+  width: 4.375rem;
   cursor: pointer;
 }
 
 .sjsu-game-dev {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   font-family: "Poppins";
 }
@@ -276,7 +257,7 @@ header {
   display: flex;
   margin-left: auto;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
 }
 
 /* target nav tags and a tag inside them */
@@ -288,4 +269,51 @@ header {
   color: #face0d;
 }
 
-/* may need to get rid of this: will target all buttons */
+.about-container {
+  justify-content: center;
+}
+
+/* Container for all officers */
+
+.our-officers {
+  margin-left: 10rem;
+  margin-top: 45.625rem;
+
+  font-size: 3.125rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.our-officers-section {
+  height: 147.313rem; 
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.officers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Individual officer box */
+.officer {
+background-color: white;
+color: black;
+border-radius: 0.5rem;
+padding: 0.625rem;
+width: 25rem;
+box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.officer-image {
+background-color: #cccccc;
+height: 9.375rem;
+width: 100%;
+border-radius: 0.5rem;
+margin-bottom: 0.625rem;
+}
