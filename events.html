@@ -6,30 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/events.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="javascript/footer.js" type="text/javascript" defer></script>
+  <script src="javascript/header.js" type="text/javascript" defer></script>
   <title>Events</title>
 </head>
 
 <body>
-  <!--navbar and logo-->
-  <header>
-    <!-- div is for the left side of the header-->
-    <div class="navbar-left">
-      <a href="index.html"><img href=""src="logo.png" alt="logo" class="logo"></a>
-      <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
-    </div>
-    
-    <nav>
-      <ul class="nav-links">
-        <li> <a href="about.html">About</a></li>
-        <li> <a href="">Knowledge Base</a></li>
-        <li> <a href="">Games</a></li>
-        <li> <a href="events.html">Events</a></li>
-        <li> <a href="">Workshop</a></li>
-        <li> <a href="">FAQ</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <!--navbar & logo-->
+  <header-component></header-component>
+  
   <!--header image-->
   <div id="header_image">
   </div>
@@ -37,9 +22,9 @@
   <!--page title and assets-->
   <h1 class="title">
     <strong>
-      <img id="title_decor_left" src="remote-controller.png">
+      <img id="title_decor_left" src="assets/gamedev_assets_controller.svg">
       Events
-      <img id="title_decor_right" src="remote-controller.png">
+      <img id="title_decor_right" src="assets/gamedev_assets_controller.svg">
     </strong>
   </h1>
 
@@ -77,27 +62,17 @@
 
   <!--interactable calendar-->
   <div class = "calendar">
-  <iframe src="https://calendar.google.com/calendar/embed?height=750&amp;wkst=1&amp;bgcolor=%23F6BF26&amp;ctz=America%2FLos_Angeles&amp;src=dmN1dGZuODlybnM1c2I1YjN0ZWY5OGRvZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;color=%237CB342" style="border:solid 1px #777" width="1000" height="750" frameborder="0" scrolling="no">
-  </iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=750&amp;wkst=1&amp;bgcolor=%23F6BF26&amp;ctz=America%2FLos_Angeles&amp;src=dmN1dGZuODlybnM1c2I1YjN0ZWY5OGRvZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23009688&amp;color=%237CB342" style="border:solid 1px #777" width="1000" height="750" frameborder="0" scrolling="no">
+    </iframe>
   </div>
 
-  <footer>
-      <!-- reused header navbar for footer -->
-      <div class="navbar-left">
-        <a href="index.html"><img href=""src="logo.png" alt="logo" class="logo"></a>
-        <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
-      </div>
-      
-      <nav>
-        <div class="social-media-link">
-          <!-- used nested img tags in the 'a' tag -->
-          <a href="https://www.instagram.com/sjsugamedev/"><img href=""src="img\social-media\instagram.png" alt="logo" class="social-media-logo"></a>
-          <a href="https://www.linkedin.com/company/sjsugamedev/"><img href=""src="img\social-media\linkedin.png" alt="logo" class="social-media-logo"></a>
-          <a href="https://www.twitch.tv/sjsugamedev"><img href=""src="img\social-media\twitch.png" alt="logo" class="social-media-logo6"></a>
-          <a href="https://www.youtube.com/@SJSUGameDev"><img href=""src="img\social-media\youtube.png" alt="logo" class="social-media-logo"></a>
-      </div>
-      </nav>
-    </footer>
+  <!--background logo assets-->
+  <div>
+    <img id="top_left_logo4" src="assets/gamedev_assets_logo4.svg">
+  </div>
+
+  <!--footer-->
+  <footer-component></footer-component>
 
 </body>
 </html>
