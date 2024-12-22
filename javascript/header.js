@@ -30,7 +30,7 @@ headerTemplate.innerHTML =
 
   header
   {
-    background-color: #003E82;
+    background-color: rgba(0,0,0,0);
     display: flex;
     justify-content: space-between;
     align-items: center;
