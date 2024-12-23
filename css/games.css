@@ -1,0 +1,124 @@
+/* reset global margins and padding */
+* 
+{ 
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0; 
+}
+
+/* applies to all elements on page */
+body 
+{
+  height: auto;
+  margin: auto;
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+    );
+}
+
+/* header image */
+#header_image 
+{
+  background-image: url(../img/web_banner_big_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vw;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+}
+
+#header_text
+{
+  text-align: center;
+  position: relative;
+  margin-left: 23%;
+  margin-right: 23%;
+  top: 20%;
+
+  border-radius: 5rem;
+  padding: 4rem;
+
+  font-size: 3.2rem;
+  font-weight: 900;
+
+  color: white;
+  background-color: #191d88f4;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+}
+
+#header_text_description
+{
+  font-size: 1.8rem;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#itchlink
+{
+  text-align: center;
+  position: relative;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 13rem;
+
+  border-radius: 5rem;
+  padding: 1rem;
+  padding-top: 0rem;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+
+  color: white;
+  background-color: #191d88f4;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+}
+
+#itchlogo
+{
+  position: relative;
+  top: 1rem;
+  left: -0.5rem;
+}
+
+#left_corner
+{
+  position: relative;
+  margin-bottom: -4rem;
+  margin-right: 1.6rem;
+}
+
+#mascot_left
+{
+  position: relative;
+  margin-left: -12.2rem;
+  margin-bottom: -1rem;
+}
+
+#right_corner
+{
+  transform: scaleY(-1) scaleX(-1);
+  margin-bottom: 1.5rem;
+}
+
+#mascot_right
+{
+  transform: scale(0.5);
+  position: relative;
+  margin-left: -11.9rem;
+  margin-right: -10rem;
+  margin-bottom: -10rem;
+}
+
+/* title and assets */
+.title 
+{
+  text-align: center;
+  padding: 8%;
+  font-size: 3.8rem;
+  color: white;
+}
