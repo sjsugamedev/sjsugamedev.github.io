@@ -122,3 +122,41 @@ body
   font-size: 3.8rem;
   color: white;
 }
+
+.games
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.games > div {
+  padding: 3rem;
+  padding-top: 5.6rem;
+  margin: 3.5rem;
+  height: 40rem;
+  border-radius: 4rem;
+  text-align: center;
+  color: white;
+}
+
+#gameelt {
+  transform: scale(1.4);
+  border-radius: 3rem;
+}
+
+#gametitle {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 1000;
+  width: 20rem;
+  top: -4rem;
+  margin: auto;
+}
+
+#gamedescription {
+  position: relative;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  width: 27rem;
+}
