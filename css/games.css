@@ -28,7 +28,7 @@ body
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 60vw;
+  min-height: 50rem;
   box-shadow: 0rem 0.188rem 0.438rem #043162;
 }
 
@@ -36,9 +36,10 @@ body
 {
   text-align: center;
   position: relative;
-  margin-left: 23%;
-  margin-right: 23%;
-  top: 20%;
+  margin-left: 23vw;
+  margin-right: 23vw;
+  top: 11rem;
+  margin-bottom: 14rem;
 
   border-radius: 5rem;
   padding: 4rem;
@@ -64,7 +65,7 @@ body
   position: relative;
   margin-left: 40%;
   margin-right: 40%;
-  margin-top: 13rem;
+  margin-top: -2rem;
 
   border-radius: 5rem;
   padding: 1rem;
