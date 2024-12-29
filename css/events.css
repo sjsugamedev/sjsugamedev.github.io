@@ -9,9 +9,8 @@
 /* applies to all elements on page */
 body 
 {
-  width: 1440px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
   background: linear-gradient(
     180deg,
     #003e82 0%,
@@ -25,60 +24,59 @@ body
 #header_image 
 {
   background-image: url(../img/web_banner_big_bg.png);
-  background-size: 1400px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 410px;
-  box-shadow: 0px 3px 7px #043162;
+  height: 30vw;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
 }
 
 /* "Events" title and assets */
 .title 
 {
-  font-size: 80px;
   text-align: center;
-  margin-top: 150px;
+  padding: 8%;
+  padding-bottom: 0rem;
+  font-size: 7vw;
   color: white;
 }
 
 #title_decor_left 
 {
-  width: 130px;
-  margin-bottom: -20px;
-  margin-right: 100px;
+  width: 14%;
+  margin-right: 4%;
+  opacity: 0.65;
 }
 
 #title_decor_right 
 {
   transform: scaleX(-1);
-  width: 130px;
-  margin-bottom: -20px;
-  margin-left: 100px;
-}
-
-/* General CSS for events */
-.events {
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 14%;
+  margin-left: 4%;
+  opacity: 0.65;
 }
 
 /* Event name */
 #event_name 
 {
-  font-weight:900;
-  margin-top: 150px;
-  line-height: 100px;
-  font-size: 40px;
+  font-weight: 900;
+  padding: 10%;
+  padding-bottom: 1%;
+  padding-top: 0rem;
+  line-height: 6.25rem;
+  font-size: 3.27vw;
   color: #ffc436;;
 }
 
 /* Event description */
 #event_description 
 {
-  margin-top: 18px;
-  font-size: 28px;
+  padding: 10%;
+  padding-top: 1%;
+  font-size: 2vw;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 3vw;
   color: white;
 }
 
@@ -91,16 +89,54 @@ body
 /* background logo assets */
 #top_left_logo4
 {
-  width: 215px;
-  position: absolute;
-  top: 600px;
-  transform: rotateX(180deg);
+  width: 25%;
+  transform: rotateX(200deg);
+  margin-left: -7vw;
+  margin-top: -30vh;
+  opacity: 0.7;
+}
+
+#top_right_logo4
+{
+  width: 29%;
+  margin-left: 80vw;
+  margin-top: -35vh;
+  opacity: 0.7;
+}
+
+#left_middle_logo4
+{
+  width: 21%;
+  transform: rotateX(200deg);
+  margin-left: -10.7vw;
+  margin-top: -28vh;
+  opacity: 0.7;
+}
+
+#left_bottom_logo4
+{
+  width: 21%;
+  transform: rotateX(220deg);
+  margin-left: -5vw;
+  margin-top: 3rem;
+  opacity: 0.7;
+}
+
+#right_bottom_logo4
+{
+  width: 27%;
+  margin-left: 76vw;
+  opacity: 0.7;
+  margin-bottom: 30rem;
 }
 
 /* Google calendar */
-.calendar 
-{
-  text-align: center;
-  margin-top: 270px;
-  margin-bottom: 800px;
+.calendar {
+	text-align: center;
 }
+
+.calendar iframe {
+  width: 75%;
+  height: 110vh;
+}
+
