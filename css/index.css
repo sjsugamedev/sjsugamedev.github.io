@@ -1,106 +1,175 @@
- /* Global Styles */
- * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* reset global margins and padding */
+* 
+{ 
   font-family: "Poppins";
+  margin: 0;
+  padding: 0; 
 }
 
-body {
-  background-color: #002366;
-  color: #fff;
-  line-height: 1.6;
+/* applies to all elements on page */
+body 
+{
+  height: auto;
+  margin: auto;
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+    );
 }
 
-h1, h2, h3 {
-  text-align: center;
-}
-
-a {
-  color: #ffcc00;
-  text-decoration: none;
-}
-
-/* Header Section */
-.header {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #0033a0;
-  color: #ffcc00;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-}
-
-.header p {
-  font-size: 1.2rem;
-}
-
-.join-discord {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #5865F2;
-  border-radius: 5px;
-  font-size: 1rem;
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-}
-
-/* About Section */
-.about {
-  padding: 50px 20px;
-  background-color: #001f4d;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  color: #ffcc00;
-  margin-bottom: 30px;
-}
-
-.about .info {
-  margin: 20px 0;
-}
-
-.about .info h3 {
-  color: #ffcc00;
-}
-
-/* Mission Section */
-.mission {
-  padding: 50px 20px;
-  background-color: #002b80;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-/* Media Section */
-.media {
-  padding: 50px 20px;
-  background-color: #001a66;
-  text-align: center;
-}
-
-.media iframe {
+/* header image */
+#header_image 
+{
+  background-image: url(../img/web_banner_big_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
   width: 100%;
-  max-width: 560px;
-  height: 315px;
-  border: none;
-  border-radius: 8px;
+  min-height: 60rem;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
 }
 
-/* Footer Section */
-.footer {
-  padding: 20px;
-  background-color: #000d33;
+#header_text
+{
   text-align: center;
+  position: relative;
+  margin-left: 23vw;
+  margin-right: 23vw;
+  top: 15rem;
+  margin-bottom: 14rem;
+
+  border-radius: 5rem;
+  padding: 4rem;
+
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  color: white;
+
+  /* Gradient background */
+  background: linear-gradient(
+    90deg, /* Horizontal gradient */
+    rgb(48, 114, 200)0%, /* Darker shade on the left */
+    rgb(29, 42, 146) 100% /* Lighter shade on the right */
+  );
+
+  box-shadow: 0rem 0.188rem 0.438rem #043162
 }
 
-.footer a {
-  color: #ffcc00;
-  margin: 0 10px;
-  text-decoration: none;
+#header_text_description
+{
+  font-size: 1.8rem;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#discord-link
+{
+  text-align: center;
+  position: relative;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20rem;
+
+  border-radius: 5rem;
+  padding: 1rem;
+  padding-top: 0rem;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+
+  color: white;
+  background-color: rgb(25, 29, 136);
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+}
+
+#discord-logo
+{
+  position: relative;
+  top: 1rem;
+  left: -0.5rem;
+
+  width: 20%;
+  height: auto;
+}
+
+#left_corner
+{
+  position: relative;
+  margin-bottom: -4rem;
+  margin-right: 1.6rem;
+}
+
+#mascot_left
+{
+  position: relative;
+  margin-left: -12.2rem;
+  margin-bottom: -1rem;
+}
+
+#right_corner
+{
+  transform: scaleY(-1) scaleX(-1);
+  margin-bottom: 1.5rem;
+}
+
+#mascot_right
+{
+  transform: scale(0.5);
+  position: relative;
+  margin-left: -11.9rem;
+  margin-right: -10rem;
+  margin-bottom: -10rem;
+}
+
+/* title and assets */
+.title 
+{
+  text-align: center;
+  padding: 8%;
+  font-size: 3.8rem;
+  color: white;
+}
+
+.games
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.games > div {
+  padding: 3rem;
+  padding-top: 5.6rem;
+  margin: 3.5rem;
+  height: 40rem;
+  border-radius: 4rem;
+  text-align: center;
+  color: white;
+}
+
+#gameelt {
+  transform: scale(1.4);
+  border-radius: 3rem;
+}
+
+#gametitle {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 1000;
+  width: 20rem;
+  top: -4rem;
+  margin: auto;
+}
+
+#gamedescription {
+  position: relative;
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  width: 27rem;
 }
