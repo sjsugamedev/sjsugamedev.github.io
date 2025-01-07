@@ -1,0 +1,19 @@
+head
+{ 
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0; 
+    background-color: #003e82;
+  }
+
+  body 
+{
+    background-color: #003e82;
+    font-family: "Poppins";
+  }
+
+div
+{
+    color: #003e82;
+    font-family: "Poppins";
+}
