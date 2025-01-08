@@ -28,44 +28,48 @@ body
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 30vw;
+  height: 28rem;
   box-shadow: 0rem 0.188rem 0.438rem #043162;
+  margin-bottom: 10rem;
 }
 
 /* "Events" title and assets */
 .title 
 {
   text-align: center;
-  padding: 8%;
-  padding-bottom: 0rem;
-  font-size: 7vw;
+  position: relative;
+  margin-left: 34vw;
+  margin-right: 34vw;
+  top: 9rem;
+
+  border-radius: 5rem;
+  padding: 3rem;
+
+  font-size: 2.938rem;
+  line-height: 2.6rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
   color: white;
-}
 
-#title_decor_left 
-{
-  width: 14%;
-  margin-right: 4%;
-  opacity: 0.65;
-}
+  /* Gradient background */
+  background: linear-gradient(
+    90deg, /* Horizontal gradient */
+    rgb(48, 114, 200)0%, /* Darker shade on the left */
+    rgb(29, 42, 146) 100% /* Lighter shade on the right */
+  );
 
-#title_decor_right 
-{
-  transform: scaleX(-1);
-  width: 14%;
-  margin-left: 4%;
-  opacity: 0.65;
+  box-shadow: 0rem 0.188rem 0.438rem #043162
 }
 
 /* Event name */
 #event_name 
 {
-  font-weight: 900;
   padding: 10%;
-  padding-bottom: 1%;
+  padding-bottom: 1rem;
   padding-top: 0rem;
+  
   line-height: 6.25rem;
-  font-size: 3.27vw;
+  font-size: 2.938rem;
   color: #ffc436;;
 }
 
@@ -74,9 +78,11 @@ body
 {
   padding: 10%;
   padding-top: 1%;
-  font-size: 2vw;
+
+  font-size: 1.563rem;
   font-weight: 600;
-  line-height: 3vw;
+  line-height: 3rem;
+  
   color: white;
 }
 
@@ -87,22 +93,6 @@ body
 }
 
 /* background logo assets */
-#top_left_logo4
-{
-  width: 25%;
-  transform: rotateX(200deg);
-  margin-left: -7vw;
-  margin-top: -30vh;
-  opacity: 0.7;
-}
-
-#top_right_logo4
-{
-  width: 29%;
-  margin-left: 80vw;
-  margin-top: -35vh;
-  opacity: 0.7;
-}
 
 #left_middle_logo4
 {
@@ -125,9 +115,8 @@ body
 #right_bottom_logo4
 {
   width: 27%;
-  margin-left: 76vw;
+  margin-left: 71vw;
   opacity: 0.7;
-  margin-bottom: 30rem;
 }
 
 /* Google calendar */
@@ -136,7 +125,8 @@ body
 }
 
 .calendar iframe {
-  width: 75%;
-  height: 110vh;
+  width: 60vw;
+  height: 50vw;
 }
+
 

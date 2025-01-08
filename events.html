@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/events.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
   <script src="javascript/footer.js" type="text/javascript" defer></script>
   <script src="javascript/header.js" type="text/javascript" defer></script>
   <title>Events</title>
@@ -15,27 +20,16 @@
   <!--navbar & logo-->
   <header-component></header-component>
   
-  <!--header image-->
+  <!--header image and page title-->
   <div id="header_image">
+    <div class="title">
+      <strong>
+        Events
+      </strong>
+    </div>
   </div>
-
-  <!--page title and decor-->
-  <h1 class="title">
-    <strong>
-      <img id="title_decor_left" src="assets/gamedev_assets_controller.svg">
-      Events
-      <img id="title_decor_right" src="assets/gamedev_assets_controller.svg">
-    </strong>
-  </h1>
 
   <!--background logo assets-->
-  <div>
-    <img id="top_left_logo4" src="assets/gamedev_assets_logo4.svg">
-  </div>
-
-  <div>
-    <img id="top_right_logo4" src="assets/gamedev_assets_logo4.svg">
-  </div>
 
   <!--event entries-->
   <div class="events">
@@ -52,21 +46,6 @@
       what ideas you like the most. Make sure you attend!
     </p>
 
-    <h2 id="event_name">
-      <strong>
-      GDC 
-      <span id="event_date">  <!--event date-->
-        Mar 18-22
-      </span>
-      </strong>
-    </h2>
-    <p id="event_description">
-      GDC is an annual expo for game developers for those who are 
-      interested in meeting up with guest speakers who are involved in 
-      game development. This will be a great opportunity to make 
-      connection and gain knowledge of what it’s like to be in the game 
-      industry!
-    </p>
   </div>
 
   <div>
@@ -88,6 +67,9 @@
   <div>
     <img id="right_bottom_logo4" src="assets/gamedev_assets_logo4.svg">
   </div>
+
+  <!--padding for bottom-->
+  <div style="margin-bottom: 6rem;"></div>
 
   <!--footer-->
   <footer-component></footer-component>
