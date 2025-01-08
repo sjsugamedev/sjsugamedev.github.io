@@ -6,13 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/minecraft.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <script src="javascript/footer.js" type="text/javascript" defer></script>
+  <script src="javascript/header.js" type="text/javascript" defer></script>
   <title>Minecraft</title>
+  <header-component></header-component>
+
+  <style>
+    .vector-container {
+      position: relative;
+      width: 100%;
+      max-width: 1090px; 
+      margin: 0 auto;
+    }
+    .vector-image {
+      width: 100%;
+      height: auto;
+    }
+    .text-content {
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      color: white; 
+      text-align: 2;
+    }
+    .text-content h2,
+    .text-content p {
+      margin: 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+  <style>
+
+  </style>
 </head>
 
 <body>
   <header>
     <div class="navbar-left">
-      <a href="index.html"><img href=""src="assest/logo_icon.png" alt="logo" class="logo"></a>
+      <a href="index.html"><img href=""src="assets/logo_icon.png" alt="logo" class="logo"></a>
       <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
     </div>
     
@@ -29,46 +63,70 @@
   </header>
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+
+
+<div>
+  <img id="top_left_logo4" src="assets/group2.png">
+  <img id="top_videogame" src="assets/Group (2).png">
+  <img id="top_whiteshape" src="assets/Vector.png">
+
+  <img id="top_right_logo4" src="assets/Group.png">
+  <img id="left_logo2" src="assets/group3.png">
+  <img id="bracket" src="assets/Group 5.png">
+  <img id="bracket2" src="assets/Group 6.png">
+
+</div>
 
   <h1 class="title">
     <strong>
-      <img id="title_decor_left" src="remote-controller.png">
       Minecraft
-      <img id="title_decor_right" src="remote-controller.png">
     </strong>
   </h1>
 
+  <br>
 
-  <div class="description2">
-    <h2 id="name"> 
-      <strong>ip address</strong>
-    </h2>
-    <p id="description"> 
-      Join other club members in Minecraft where <br>
-      you can build, craft, and mine.
-    </p>
+  <br>
+  <br>
+  <br>
 
-    <h2 id="name">
+  <div class="vector-container">
+    
+    <div class="text-content">
 
-      </span>
-      </strong>
-    </h2>
-
+      <p id="description">
+        ip address<br>
+        Join other club members in Minecraft<br> where
+        you can build, craft, and mine.
+      </p>
+    </div>
   </div>
 
+
+  
   <div class = "image1">
-  <iframe src="assest/craft_23.png"style="border:solid 1px #777" width="1000" height="750" frameborder="0" scrolling="no">
-  </iframe>
+    
+    <img src="assets/craft_23.png" alt="Crafting Image 2" class="image1">
+
   </div>
 
 
   <div class = "image2">
-    <iframe src="assest/craft_33.png"style="border:solid 1px #777" width="1000" height="750" frameborder="0" scrolling="no">
-    </iframe>
+    <img src="assets/craft_33.png" alt="Crafting Image 2" class="image2">
+
     </div>
 
-  <footer>
+
+  
+
+    <footer-component></footer-component>
+
+  <!-- <footer>
       <div class="navbar-left">
         <a href="index.html"><img href=""src="assest/logo_icon.png" alt="logo" class="logo"></a>
         <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club foot</a>
@@ -77,7 +135,7 @@
       <nav>
 
       </nav>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
