@@ -1,8 +1,9 @@
 head
 { 
     font-family: "Poppins";
-    margin: 0;
-    padding: 0; 
+    background: linear-gradient(#191D88,#337CCF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: #003e82;
   }
 
@@ -11,9 +12,72 @@ head
     background-color: #003e82;
     font-family: "Poppins";
   }
-
-div
-{
+ 
+  section 
+  {
+    background-color: white;
     color: #003e82;
     font-family: "Poppins";
+    display: flex;
+    flex-direction:row;
+    padding: 15px;
+  }
+  div
+  {
+      background-color: white;
+      color: #003e82;
+      font-family: "Poppins";
+  }
+  
+  h2
+  {
+    font-size: medium;
+  }
+  
+  dt
+  {
+    font-size: 16px;
+  }
+.container-1
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 5px;
+    padding: 0px;
+    column-gap: 10px;
+}
+
+.flexbox-item Jessica_Image
+{
+    width: 256px;
+    height: 200px;
+    margin: 0px
+}
+
+.flexbox-item Jessica
+{
+    width: 334px;
+    height: 238px;
+    margin-right:50px
+}
+
+.flexbox-item Kezia_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 800px;
+}
+
+.flexbox-item Kezia
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
+
 }
