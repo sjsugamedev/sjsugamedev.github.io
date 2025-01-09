@@ -19,7 +19,7 @@ head
     color: #003e82;
     font-family: "Poppins";
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     padding: 15px;
   }
   div
@@ -183,6 +183,37 @@ head
 {
     width: 334px;
     height: 238px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.container-2
+{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 5px;
+    padding: 0px;
+    column-gap: 10px;
+    width: 256px;
+    flex-direction: row;
+}
+.flexbox-item Endlessette_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+
+.flexbox-item Ben_Image
+{
+    width: 256px;
+    height: 200px;
 
     position: relative;
     left: 1000px;
