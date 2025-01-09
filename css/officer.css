@@ -42,7 +42,7 @@ head
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch;
     margin: 5px;
     padding: 0px;
@@ -60,7 +60,7 @@ head
 {
     width: 334px;
     height: 238px;
-    margin-right:50px
+    padding: 100px;
 }
 
 .flexbox-item Kezia_Image
@@ -80,4 +80,110 @@ head
     position: relative;
     left: 1000px;
 
+}
+
+.flexbox-item Guzel_Image
+{
+    width: 256px;
+    height: 200px;
+    margin: 0px
+}
+
+.flexbox-item Guzel
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Mikyle_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Mikyle
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Natalie_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Natalie
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Tyler_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Tyler
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Hoang_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Hoang
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 0px;
+}
+
+.flexbox-item Hannah_Image
+{
+    width: 256px;
+    height: 200px;
+
+    position: relative;
+    left: 1000px;
+}
+
+.flexbox-item Hannah
+{
+    width: 334px;
+    height: 238px;
+
+    position: relative;
+    left: 1000px;
 }
