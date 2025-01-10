@@ -1,220 +1,62 @@
-head
-{ 
-    font-family: "Poppins";
-    background: linear-gradient(#191D88,#337CCF);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
     background-color: #003e82;
-  }
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-  body 
-{
-    background-color: #003e82;
-    font-family: "Poppins";
-  }
- 
-  section 
-  {
+h1 {
+    text-align: center;
+    background-color: #191D88;
+    color: white;
+    padding: 10px;
+}
+
+section {
     background-color: white;
     color: #003e82;
-    font-family: "Poppins";
-    display: flex;
-    flex-direction:column;
-    padding: 15px;
-  }
-  div
-  {
-      background-color: white;
-      color: #003e82;
-      font-family: "Poppins";
-  }
-  
-  h2
-  {
-    font-size: medium;
-  }
-  
-  dt
-  {
-    font-size: 16px;
-  }
-.container-1
-{
+    padding: 20px;
+}
+
+.container-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    margin: 5px;
-    padding: 0px;
-    column-gap: 10px;
+    justify-content: space-evenly; /* Align items evenly across the container */
+    gap: 20px; /* Space between items */
+    margin: 20px 0;
 }
 
-.flexbox-item Jessica_Image
-{
-    width: 256px;
-    height: 200px;
-    margin: 0px
+.flexbox-item {
+    display: flex;
+    flex-direction: column; /* Align image and text vertically */
+    align-items: center; /* Center items within each box */
+    text-align: center;
+    width: 250px; /* Consistent width for all items */
+    margin: 10px;
 }
 
-.flexbox-item Jessica
-{
-    width: 334px;
-    height: 238px;
-    padding: 100px;
+.flexbox-item img {
+    width: 100%; /* Image fills the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    margin-bottom: 10px; /* Space between image and text */
 }
 
-.flexbox-item Kezia_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 800px;
+h2 {
+    font-size: 1.2em;
+    color: #191D88;
+    margin: 10px 0;
 }
 
-.flexbox-item Kezia
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-
+dd {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #003e82;
 }
 
-.flexbox-item Guzel_Image
-{
-    width: 256px;
-    height: 200px;
-    margin: 0px
-}
-
-.flexbox-item Guzel
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Mikyle_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Mikyle
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Natalie_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Natalie
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Tyler_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Tyler
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Hoang_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Hoang
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 0px;
-}
-
-.flexbox-item Hannah_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.flexbox-item Hannah
-{
-    width: 334px;
-    height: 238px;
-
-    position: relative;
-    left: 1000px;
-}
-
-.container-2
-{
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    margin: 5px;
-    padding: 0px;
-    column-gap: 10px;
-    width: 256px;
-    flex-direction: row;
-}
-.flexbox-item Endlessette_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
-}
-
-
-.flexbox-item Ben_Image
-{
-    width: 256px;
-    height: 200px;
-
-    position: relative;
-    left: 1000px;
+@media screen and (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
 }
