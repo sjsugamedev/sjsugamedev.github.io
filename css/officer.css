@@ -20,7 +20,7 @@ section {
 
 .container-1 {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-evenly; /* Align items evenly across the container */
     gap: 20px; /* Space between items */
     margin: 20px 0;
@@ -29,8 +29,8 @@ section {
 .flexbox-item {
     display: flex;
     flex-direction: column; /* Align image and text vertically */
-    align-items: center; /* Center items within each box */
-    text-align: center;
+    align-items: left; /* Center items within each box */
+    text-align: left;
     width: 250px; /* Consistent width for all items */
     margin: 10px;
 }
