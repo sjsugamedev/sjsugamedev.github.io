@@ -38,15 +38,16 @@ body
 {
   text-align: center;
   position: relative;
-  margin-left: 34vw;
-  margin-right: 34vw;
-  top: 9rem;
+  margin-left: 22vw;
+  margin-right: 22vw;
+  top: 8rem;
 
   border-radius: 5rem;
   padding: 3rem;
 
   font-size: 2.938rem;
-  line-height: 2.6rem;
+  font-weight: 600;
+  line-height: 2.1rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
 
   color: white;
