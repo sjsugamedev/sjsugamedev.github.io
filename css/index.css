@@ -29,7 +29,10 @@ body
   background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
   width: 100%;
   min-height: 60rem;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
+  box-shadow: 0rem 0.188rem 0.438rem #000000;
+  position: relative; /* Ensure proper stacking context */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow for visibility */
+  z-index: 1; /* Ensure shadow is above other elements */
 }
 
 #header_text
@@ -58,7 +61,7 @@ body
     rgb(29, 42, 146) 100% /* Lighter shade on the right */
   );
 
-  box-shadow: 0rem 0.188rem 0.438rem #043162
+  box-shadow: 0rem 0.188rem 0.438rem #000000
 }
 
 #header_text_description
@@ -88,6 +91,11 @@ body
   box-shadow: 0rem 0.188rem 0.438rem #043162;
 }
 
+#discord-link:hover {
+  transform: scale(1.08);
+  text-decoration: underline;
+}
+
 #discord-logo
 {
   position: relative;
@@ -98,78 +106,110 @@ body
   height: auto;
 }
 
-#left_corner
-{
-  position: relative;
-  margin-bottom: -4rem;
-  margin-right: 1.6rem;
-}
 
-#mascot_left
-{
-  position: relative;
-  margin-left: -12.2rem;
-  margin-bottom: -1rem;
-}
-
-#right_corner
-{
-  transform: scaleY(-1) scaleX(-1);
-  margin-bottom: 1.5rem;
-}
-
-#mascot_right
-{
-  transform: scale(0.5);
-  position: relative;
-  margin-left: -11.9rem;
-  margin-right: -10rem;
-  margin-bottom: -10rem;
-}
-
-/* title and assets */
-.title 
-{
-  text-align: center;
-  padding: 8%;
-  font-size: 3.8rem;
-  color: white;
-}
-
-.games
-{
+.main-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  flex-direction: column;
 
-.games > div {
-  padding: 3rem;
-  padding-top: 5.6rem;
-  margin: 3.5rem;
-  height: 40rem;
-  border-radius: 4rem;
-  text-align: center;
+  /* Gradient background */
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+    );
+
   color: white;
 }
 
-#gameelt {
-  transform: scale(1.4);
-  border-radius: 3rem;
+.title
+{
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  color: white;  
 }
 
-#gametitle {
-  position: relative;
-  font-size: 2rem;
-  font-weight: 1000;
-  width: 20rem;
-  top: -4rem;
-  margin: auto;
+.sub-title,
+.description {
+  text-align: left; /* Align text content to the left */
+  width: 48%; /* Set a consistent width for alignment */
+  margin: 0 auto; /* Center the element within the parent */
 }
 
-#gamedescription {
-  position: relative;
-  margin-top: 5rem;
-  font-size: 1.3rem;
-  width: 27rem;
+/* spacing between paragraphs */
+.sub-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
+
+.description
+{
+  margin-bottom: 2rem;
+}
+
+/* Catchphrase container */
+.catchphrase {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+}
+
+/* Text container styling */
+.catchphrase-text {
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  line-height: 1.5; /* Line spacing for multiple lines */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* Highlight specific text */
+.highlight {
+  color: #FFC436; /* Blue color for "Forging Realities" */
+}
+
+/* Corner images */
+.corner {
+  width: 4rem; /* Adjust size of the corner brackets */
+}
+
+/* Mascot images */
+.mascot {
+  width: 5rem; /* Mascots size adjustment */
+  position: relative;
+  top: -0.5rem; /* Align mascots vertically with the text */
+}
+
+/* Rotate right corner */
+#right_corner {
+  transform: rotate(180deg); /* Flips the right corner */
+}
+
+/* Bracket Adjustment */
+#left_corner {
+  position: relative;
+  top: 2rem; /* Moves the left bracket down */
+}
+#right_corner {
+  position: relative;
+  top: -2rem; /* Moves the right bracket up */
+}
+
+.video
+{
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
