@@ -88,7 +88,6 @@ body
 
 #itchlink:hover {
   transform: scale(1.08);
-  text-decoration: underline;
 }
 
 #itchlogo
@@ -152,13 +151,18 @@ body
   color: white;
 }
 
+#gamelink {
+  text-decoration: none;
+  color: white;
+}
+
 #gameelt {
   border-radius: 3rem;
   margin-top: -4rem;
   margin-bottom: 1rem;
 }
 
-#gameelt:hover {
+.games > div:hover {
   transform: scale(0.9);
 }
 
