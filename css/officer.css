@@ -1,5 +1,279 @@
+*{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    background: linear-gradient(
+      180deg,
+      #003e82 0%,
+      rgba(51, 124, 207, 0.8) 76.7%,
+      rgba(51, 124, 207, 0.6) 99.98%,
+      rgba(51, 124, 207, 0.3) 99.99%
+      );
+  }
+  
+  /* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
+  
+  /* "About Us" Title Part */
+  .about-us-title {
+    /* About Us Page Title */
+    font-size: 2.938rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+  
+    /* Background Image */
+    background-image: url(../img/web_banner_big_bg.png);
+    background-size: 1400px;
+    background-position: center;
+    width: 100%;
+    height: 410px;
+    box-shadow: 0px 3px 7px #043162;
+  }
+  
+  /* "About Us" Title Text */
+  .about-us-title-text {
+    padding-top: 16.188rem;
+    padding-bottom: 0rem;
+    font-weight: bold;
+  }
+  
+  /* Club's Statement Part */
+  .club-statement {
+    margin-left: 10.063rem;
+    margin-right: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+  }
+  
+  /* Club's Statement Text */
+  .club-statement-text {
+    font-size: 1.563rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+  
+    line-height: 2.5rem;
+  }
+  
+  /* What We Provide Part */
+  /* What We Provide Title */
+  .what-we-provide-title {
+    margin-left: 10.063rem;
+    margin-right: 59.125rem;
+    margin-bottom: 1.125rem;
+  
+    font-size: 2.25rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  /* What We Provide Text */
+  .what-we-provide-text {
+    margin-left: 10.063rem;
+    margin-right: 40rem;
+    margin-bottom: 6.438rem;
+  
+    font-size: 1.063rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #fff;
+  
+    width: 39.938rem;
+    height: 7.375rem;
+    line-height: 1.563rem;
+  }
+  
+  /* Where We Meet Part */
+  /* Where We Meet Title */
+  .where-we-meet-title {
+    margin-left: 44rem;
+    margin-right: 28.063rem;
+    margin-bottom: 0.813rem;
+  
+    font-size: 2.25rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  /* Where We Meet Text */
+  .where-we-meet-text {
+    margin-left: 44rem;
+    margin-right: 12.563rem;
+    margin-bottom: 5.938rem;
+  
+    font-size: 1.063rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #fff;
+  
+    line-height: 1.563rem;
+  }
+  
+  /* Discord Link */
+  .where-we-meet-text a:link {
+    color: #feb81a;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .where-we-meet-text a:visited {
+    color: #feb81a;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  .where-we-meet-text a:hover {
+    color: black;
+    background-color: #feb81a;
+    font-weight: bolder;
+  }
+  
+  .where-we-meet-text a:active {
+    color: rgb(0, 0, 0);
+    background-color: #feb81a;
+    font-weight: bolder;
+  }
+  
+  /* Methods to LL */
+  .methods-to-ll {
+    margin-bottom: 0rem;
+  }
+  /* Elevator Part */
+  .methods-elevator {
+    margin-left: 44rem;
+  
+    font-size: 1.063rem;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  .methods-elevator-title {
+    font-size: 1.063rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .methods-elevator-list {
+    margin-left: 1.875rem;
+    margin-right: 0.625rem;
+  
+    padding-right: 0.625rem;
+  
+    line-height: 1.563rem;
+  }
+  
+  /* Stairs Part */
+  .methods-stairs {
+    margin-left: 44rem;
+    margin-top: 1.25rem;
+  
+    font-size: 1.063rem;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  .methods-stairs-title {
+    font-size: 1.063rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .methods-stairs-list {
+    margin-left: 1.875rem;
+    margin-right: 10.938rem;
+  
+    padding-right: 0.625rem;
+  
+    line-height: 1.563rem;
+  }
+  
+  /* MLK Library Images Part */
+  .mlk-images {
+    margin-left: 10.5rem;
+    float: left; /* Make the MLK Images Float Left of Where We Meet */
+  }
+  
+  .mlk-images-entrance {
+    margin-bottom: 2.563rem;
+  }
+  
+  /* navbar css  */
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li,
+  a {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  header {
+    background-color: #003e82;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3%;
+  }
+  
+  .logo {
+    margin-right: 0.625rem;
+    width: 4.375rem;
+    cursor: pointer;
+  }
+  
+  .sjsu-game-dev {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    font-family: "Poppins";
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .nav-links li {
+    display: flex;
+    margin-left: auto;
+    display: inline-block;
+    padding: 0rem 1.25rem;
+  }
+  
+  /* target nav tags and a tag inside them */
+  .nav-links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav-links li a:hover {
+    color: #face0d;
+  }
+
 body {
     background-color: #003e82;
+    background-image: linear-gradient(to margin-bottom,#191D88,#337CCF,white );
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +281,6 @@ body {
 
 h1 {
     text-align: center;
-    background-color: #191D88;
     color: white;
     padding: 10px;
 }
@@ -31,7 +304,7 @@ section {
     flex-direction: column; /* Align image and text vertically */
     align-items: left; /* Center items within each box */
     text-align: left;
-    width: 250px; /* Consistent width for all items */
+    width: 325px; /* Consistent width for all items */
     margin: 10px;
 }
 
@@ -43,13 +316,13 @@ section {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 16px;
     color: #191D88;
     margin: 10px 0;
 }
 
 dd {
-    font-size: 1em;
+    font-size: 16px;
     margin: 5px 0;
     color: #003e82;
 }
