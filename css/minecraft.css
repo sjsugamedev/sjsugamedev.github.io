@@ -81,9 +81,8 @@ header
 
 body 
 {
-  width: 1440px;
   height: auto;
-  margin: 0 auto;
+  margin: auto;
   background: linear-gradient(
     180deg,
     #003e82 0%,
@@ -95,44 +94,28 @@ body
 
 #header_image 
 {
-  background-image: url(../img/web_banner_big_bg.png);
-  background-size: 1400px;
+  
+  background-image: url(../img/craft_4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 410px;
-  box-shadow: 0px 3px 7px #191D88;
+  height: 28rem;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+  margin-bottom: 10rem;
 }
 
 .title 
 {
+  
   font-size: 47px;
   text-align: center;
-  margin-top: 150px;
-  /*color: white;*/
+  margin-top: 200px;
   color: #FFC436;;
 
   
 }
 
-#title_decor_left 
-{
-  width: 130px;
-  margin-bottom: -20px;
-  margin-right: 100px;
-}
-
-#title_decor_right 
-{
-  transform: scaleX(-1);
-  width: 130px;
-  margin-bottom: -20px;
-  margin-left: 100px;
-}
-
-.description2 {
-  margin-left: 150px;
-  margin-right: 150px;
-}
 
 #name 
 {
@@ -147,10 +130,12 @@ body
 /* description */
 #description 
 {
-  margin-top: 18px;
+  margin-top: 40px;
   font-size: 28px;
   font-weight: 600;
   line-height: 45px;
+  margin-left: 1022px;
+
   color: #191D88;
 }
 
@@ -174,68 +159,76 @@ body
 
 #top_left_logo4
 {
-  position: absolute;
-  width: 20%; 
-  left: 22vw; 
-  top: -16%;
-  opacity: 0.7; 
-  z-index: -1; 
+  position: absolute; 
 
-  
+  width: 21%;
+  margin-left: 0vw;
+  margin-top: -28vh;
+  opacity: 0.7;
+  z-index: -1;
+
 }
 
 #top_right_logo4 {
   position: absolute; 
-  width: 25%; 
-  left: 58vw; 
-  top: 37%;
-  opacity: 0.7; 
-  z-index: -1; 
+
+  width: 35%;
+  margin-left: 64vw;
+  margin-top: -10vh;
+  opacity: 0.7;
+  z-index: -1;
 
 }
 
 #top_videogame {
-  position: absolute;
-  width: 50%; 
-  left: 25vw; 
-  top: 9%; 
-  opacity: 0.7; 
-  z-index: -1;
+
+  
+    position: absolute; 
+  
+    width: 60%;
+    margin-left: 20vw;
+    margin-top: -7%;
+    opacity: 0.7;
+    z-index: -1;
 
 }
 #top_whiteshape {
-  position: absolute; 
-  width: 30%; 
-  left: 35vw; 
-  top: 30%; 
-  z-index: -1; 
+
+    position: absolute; 
+    width: 40%;
+    margin-left: 31vw;
+    margin-top: 14vh;
+    z-index: -1;
 
 }
 
 #left_logo2 {
-  position: absolute;
-  width: 45%; 
-  left: 13vw;
-  top: 124%; 
-  opacity: 0.7; 
-  z-index: -1; 
+
+    position: absolute; 
+  
+    width: 55%;
+    margin-left: 0vw;
+    margin-top: 110vh;
+    opacity: 0.7;
+    z-index: -1;
+  
 }
 
 
 #bracket
 {
-  width: 5%;
-  transform: rotateX(400deg)translateY(400px);
-  margin-left: 18vw;
+  width: 3%;
+  transform: rotateX(400deg)translateY(380px);
+  margin-left: 44vw;
   margin-top: 2;
 
 }
 
 #bracket2
 {
-  width: 5%;
-  transform: rotateX(400deg)translateY(270px);
-  margin-left: 27vw;
+  width: 3%;
+  transform: rotateX(400deg)translateY(340px);
+  margin-left: 5vw;
   margin-top: 32;
 
 }
