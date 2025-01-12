@@ -236,6 +236,7 @@
     align-items: center;
     padding: 0.625rem 3%;
   }
+
   
   .logo {
     margin-right: 0.625rem;
@@ -271,18 +272,13 @@
     color: #face0d;
   }
 
-body {
-    background-color: #003e82;
-    background-image: linear-gradient(to margin-bottom,#191D88,#337CCF,white );
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 h1 {
     text-align: center;
+    font-weight:bolder;
     color: white;
     padding: 10px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 section {
@@ -297,6 +293,30 @@ section {
     justify-content: space-evenly; /* Align items evenly across the container */
     gap: 20px; /* Space between items */
     margin: 20px 0;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-evenly; /* Align items evenly across the container */
+    gap: 5px; /* Space between items */
+    margin: 1.5rem 0;
+}
+
+.container-3 {
+    display: flex;
+    align-items: center; /* Center items within each box */
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 408px;
+    height:120px;
+    gap:5px;
+    border: 3px solid #191D88;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .flexbox-item {
@@ -315,11 +335,44 @@ section {
     margin-bottom: 10px; /* Space between image and text */
 }
 
+#Endlessette
+{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center items within each box */
+    text-align: center;
+    width: 325px; 
+    margin-top: 1.5rem;
+}
+#Ben
+{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    text-align: center;
+    width: 325px; 
+    margin-top: 1.5rem;
+}
 h2 {
     font-size: 16px;
     color: #191D88;
     margin: 10px 0;
 }
+
+h3 {
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+}
+
+h6 {
+    background-color: white;
+    color: #003e82;
+    margin: 10px 0;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
 
 dd {
     font-size: 16px;
@@ -327,9 +380,88 @@ dd {
     color: #003e82;
 }
 
+p {
+    font-size: 16px;
+    margin: 1.5rem 0;
+    color: #003e82;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight:lighter;
+    color: #191D88;
+    margin: 5px 0;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 768px) {
     .container-1 {
         flex-direction: column;
         align-items: center;
     }
+}
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+    .faq-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .faq-section h1 {
+        text-align: center;
+        color: #003e82;
+    }
+
+    .faq-section h3 {
+        text-align: center;
+        color: #003e82;
+        background-color: transparent;
+    }
+
+.accordian {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: 0,4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.accordion i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.accordion h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #191D88;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.accordion.active + .panel {
+    display: block;
 }
