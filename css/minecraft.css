@@ -111,6 +111,7 @@ body
   font-size: 47px;
   text-align: center;
   margin-top: 200px;
+  /*color: white;*/
   color: #FFC436;;
 
   
@@ -141,109 +142,85 @@ body
 
 
 
-/* Google calendar */
-.image1
-{
-  text-align: center;
-  margin-top: 270px;
-  margin-bottom: 800px;
-}
 
-.image2
-{
-  text-align: center;
-  margin-top: -730px;
-  margin-bottom: 800px;
-  margin-left: 222;
-}
 
 #top_left_logo4
 {
-  position: absolute; 
 
-  width: 21%;
-  margin-left: 0vw;
-  margin-top: -28vh;
-  opacity: 0.7;
-  z-index: -1;
-
+  margin-bottom: -4rem;
+  margin-right: 1.6rem;
+  width: 417px;
+  height: 42%;
+  top: -250px;
+  left: 50px;
 }
 
 #top_right_logo4 {
-  position: absolute; 
-
-  width: 35%;
-  margin-left: 64vw;
-  margin-top: -10vh;
-  opacity: 0.7;
-  z-index: -1;
+  margin-bottom: -24rem;
+  margin-right: 12.6rem;
+  width: 417px;
+  height: 42%;
+  top: -250px;
+  left: 50px;
 
 }
 
 #top_videogame {
 
   
-    position: absolute; 
-  
-    width: 60%;
-    margin-left: 20vw;
-    margin-top: -7%;
-    opacity: 0.7;
-    z-index: -1;
+  margin-bottom: -24rem;
+  margin-right: 12.6rem;
+  width: 617px;
+  height: 42%;
+  top: 50px;
+  left: 50px;
 
 }
 #top_whiteshape {
-
-    position: absolute; 
-    width: 40%;
-    margin-left: 31vw;
-    margin-top: 14vh;
-    z-index: -1;
-
+  margin-bottom: -24rem;
+  margin-right: 12.6rem;
+  width: 217px;
+  height: 42%;
+  top: -250px;
+  left: 50px;
 }
 
 #left_logo2 {
 
-    position: absolute; 
-  
-    width: 55%;
-    margin-left: 0vw;
-    margin-top: 110vh;
-    opacity: 0.7;
-    z-index: -1;
+  margin-bottom: -24rem;
+  margin-right: 12.6rem;
+  width: 417px;
+  height: 42%;
+  top: 250px;
+  left: 50px;
   
 }
 
 
 #bracket
 {
-  width: 3%;
-  transform: rotateX(400deg)translateY(380px);
-  margin-left: 44vw;
-  margin-top: 2;
+  margin-bottom: -24rem;
+  margin-right: 2.6rem;
+  width: 417px;
+  height: 42%;
+  top: -250px;
+  left: 0px;
 
 }
 
 #bracket2
 {
-  width: 3%;
-  transform: rotateX(400deg)translateY(340px);
-  margin-left: 5vw;
-  margin-top: 32;
+  margin-bottom: -24rem;
+  margin-right: 12.6rem;
+  width: 417px;
+  height: 42%;
+  top: -250px;
+  left: 50px;
 
 }
 
 /* footer */
-footer
-{
-  display: flex;
-  text-align: center;
-  padding: .5rem 1.5rem ;
-  background-color: #003E82;
-  color: white;
-  /* align = vertical  */
-  align-items: center;
-}
+
 
 .social-media-link
 {
@@ -260,4 +237,20 @@ footer
   /* max height because height forces whole dimension */
   height: auto;
   max-width: 100%;
+}
+
+
+.image1
+{
+  text-align: center;
+  margin-top: 270px;
+  margin-bottom: 800px;
+}
+
+.image2
+{
+  text-align: center;
+  margin-top: -730px;
+  margin-bottom: 800px;
+  margin-left: 222;
 }
