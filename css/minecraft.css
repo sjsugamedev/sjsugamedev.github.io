@@ -1,77 +1,4 @@
-/* navbar css  */
-
-*
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-li, a
-{
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
-
-.navbar-left
-{
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-header
-{
-  background-color: #003E82;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 3%;
-}
-
-.logo
-{
-  margin-right: 10px;
-  width: 70px;
-  cursor: pointer;
-}
-
-.sjsu-game-dev
-{
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
-  font-family: "Poppins";
-}
-
-.nav-links
-{
-  list-style: none;
-  margin-left: auto;
-}
-
-
-.nav-links li
-{
-  display: flex;
-  margin-left: auto;
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a
-{
-  transition: all .3s ease 0s;
-}
-
-.nav-links li a:hover
-{
-  color: #FFC436;
-}
-
+/* reset global margins and padding */
 * 
 { 
   font-family: "Poppins";
@@ -79,6 +6,7 @@ header
   padding: 0; 
 }
 
+/* applies to all elements on page */
 body 
 {
   height: auto;
@@ -92,9 +20,9 @@ body
     );
 }
 
+/* header image */
 #header_image 
 {
-  
   background-image: url(../img/craft_4.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,145 +33,145 @@ body
   margin-bottom: 10rem;
 }
 
+/* "Events" title and assets */
 .title 
 {
-  
-  font-size: 47px;
   text-align: center;
-  margin-top: 200px;
-  /*color: white;*/
-  color: #FFC436;;
+  position: relative;
+  margin-left: 22vw;
+  margin-right: 22vw;
+  top: 8rem;
 
-  
-}
+  border-radius: 5rem;
+  padding: 3rem;
 
-
-#name 
-{
-  font-weight:900;
-  margin-top: 50px;
-  margin-left: 450px;
-  line-height: 100px;
-  font-size: 25px;
-  color: #191D88;
-}
-
-/* description */
-#description 
-{
-  margin-top: 40px;
-  font-size: 28px;
+  font-size: 2.938rem;
   font-weight: 600;
-  line-height: 45px;
-  margin-left: 1022px;
+  line-height: 2.1rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
 
-  color: #191D88;
+  color: white;
+
+  /* Gradient background */
+  background: linear-gradient(
+    90deg, /* Horizontal gradient */
+    rgb(48, 114, 200)0%, /* Darker shade on the left */
+    rgb(29, 42, 146) 100% /* Lighter shade on the right */
+  );
+
+  box-shadow: 0rem 0.188rem 0.438rem #043162
 }
 
-
-
-
-
-#top_left_logo4
+/* Event name */
+#event_name 
 {
-
-  margin-bottom: -4rem;
-  margin-right: 1.6rem;
-  width: 417px;
-  height: 42%;
-  top: -250px;
-  left: 50px;
-}
-
-#top_right_logo4 {
-  margin-bottom: -24rem;
-  margin-right: 12.6rem;
-  width: 417px;
-  height: 42%;
-  top: -250px;
-  left: 50px;
-
-}
-
-#top_videogame {
-
+  padding: 10%;
+  padding-bottom: 1rem;
+  padding-top: 25rem;
   
-  margin-bottom: -24rem;
-  margin-right: 12.6rem;
-  width: 617px;
-  height: 42%;
-  top: 50px;
-  left: 50px;
+  line-height: 6.25rem;
+  font-size: 2.938rem;
+  color: #ffc436;;
+  margin-left: 872px;
 
 }
-#top_whiteshape {
-  margin-bottom: -24rem;
-  margin-right: 12.6rem;
-  width: 217px;
-  height: 42%;
-  top: -250px;
-  left: 50px;
+
+/* Event description */
+#event_description 
+{
+  padding: 10%;
+  padding-top: 4%;
+
+  font-size: 1.563rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-left: 522px;
+  color: #043162;
 }
 
-#left_logo2 {
+/* Event date */
+#event_date 
+{
+  color: white;
+}
 
-  margin-bottom: -24rem;
-  margin-right: 12.6rem;
-  width: 417px;
-  height: 42%;
-  top: 250px;
-  left: 50px;
+/* background logo assets */
+
+#left_middle_logo4
+{
+  width: 25%;
+  margin-left: 0vw;
+  margin-top: -77vh;
+  opacity: 0.7;
+}
+
+#left_bottom_logo4
+{
+  width: 85%;
+  margin-left: -10vw;
+  margin-top: -400vh;
   
+}
+
+#right_bottom_logo4
+{
+  width: 35%;
+  margin-left: 64vw;
+  margin-top: 0vh;
+}
+
+#control
+{
+  width: 85%;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  margin-bottom: -1610px;
+
+}
+
+#whitesplash
+{
+  
+  width: 58%;
+  margin-left: 25vw;
+  margin-top: -10vh;
+  margin-bottom: -900px;
+
+
 }
 
 
 #bracket
 {
-  margin-bottom: -24rem;
-  margin-right: 2.6rem;
-  width: 417px;
-  height: 42%;
-  top: -250px;
-  left: 0px;
+  padding-top: 25rem;
+
+  width: 3%;
+  margin-left: 45vw;
+  margin-top: -510vh;
 
 }
 
 #bracket2
 {
-  margin-bottom: -24rem;
-  margin-right: 12.6rem;
-  width: 417px;
-  height: 42%;
-  top: -250px;
-  left: 50px;
-
+  width: 3%;
+  margin-left: 50vw;
+  margin-top: -477vh;
 }
 
-/* footer */
-
-
-.social-media-link
-{
-  display: flex;
-  width: 10rem;
-  /* justify images to container because container holds images to apply justify content */
-  justify-content: right;
-  gap: 1rem;
+/* Google calendar */
+.calendar {
+	text-align: center;
 }
 
-.social-media-link, img
-{
-  /* max-height fits to parent - social media link div whose size is 2rem */
-  /* max height because height forces whole dimension */
-  height: auto;
-  max-width: 100%;
+.calendar iframe {
+  width: 60vw;
+  height: 50vw;
 }
-
 
 .image1
 {
   text-align: center;
-  margin-top: 270px;
+  margin-top: -700px;
   margin-bottom: 800px;
 }
 
@@ -251,6 +179,8 @@ body
 {
   text-align: center;
   margin-top: -730px;
-  margin-bottom: 800px;
+  margin-bottom: 300px;
   margin-left: 222;
 }
+
+
