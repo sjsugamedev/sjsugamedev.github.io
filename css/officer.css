@@ -26,9 +26,11 @@
     /* About Us Page Title */
     font-size: 2.938rem;
     font-family: sans-serif;
-    font-weight: 100;
     text-align: center;
     color: #fff;
+    font-weight: 500;
+    line-height: 1.563rem;
+
   
     /* Background Image */
     background-image: url(../img/web_banner_big_bg.png);
@@ -237,6 +239,14 @@
     padding: 0.625rem 3%;
   }
 
+  #FAQ
+  {
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 7%;
+    font-size: 2.938rem;
+    color: white;
+  }
   
   .logo {
     margin-right: 0.625rem;
@@ -274,11 +284,12 @@
 
 h1 {
     text-align: center;
-    font-weight:bolder;
     color: white;
     padding: 10px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    padding: 2%;
+    padding-bottom: 2%;
+    font-size: 2.938rem;
+    line-height: 2.6rem;
 }
 
 section {
@@ -404,11 +415,7 @@ h4 {
         align-items: center;
     }
 }
-.wrapper {
-    max-width: 75%;
-    margin: auto;
-    padding: 20px;
-}
+
     .faq-section {
         max-width: 800px;
         margin: 0 auto;
@@ -420,7 +427,8 @@ h4 {
     
     .faq-section h1 {
         text-align: center;
-        color: #003e82;
+        color: white;
+        font-weight: bolder;
     }
 
     .faq-section h3 {
@@ -429,6 +437,15 @@ h4 {
         background-color: transparent;
     }
 
+    .faq-title
+    {
+        position: relative;
+        font-size: 1.563rem;
+        font-weight: 600;
+        width: 20rem;
+        top: -5rem;
+        margin: auto;
+    }
 .accordian {
     width: 100%;
     margin: 0 auto;
