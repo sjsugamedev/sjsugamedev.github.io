@@ -1,16 +1,16 @@
-/* Global Reset Margin and Padding */
-* {
+/* reset global margins and padding */
+* 
+{ 
   font-family: "Poppins";
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  width: 1440px;
+/* applies to all elements on page */
+body 
+{
   height: auto;
-  margin: 0 auto;
+  margin: auto;
   background: linear-gradient(
     180deg,
     #003e82 0%,
@@ -20,255 +20,207 @@ body {
     );
 }
 
-/* Pull all elements in the body in a div "container" to set their width and balance left and right margin */
-
-/* "About Us" Title Part */
-.about-us-title {
-  /* About Us Page Title */
-  font-size: 2.938rem;
-  font-family: sans-serif;
-  font-weight: 100;
-  text-align: center;
-  color: #fff;
-
-  /* Background Image */
+/* header image */
+#header_image 
+{
   background-image: url(../img/web_banner_big_bg.png);
-  background-size: 1400px;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 410px;
-  box-shadow: 0px 3px 7px #043162;
+  height: 28rem;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+  margin-bottom: 10rem;
 }
 
-/* "About Us" Title Text */
-.about-us-title-text {
-  padding-top: 16.188rem;
-  padding-bottom: 0rem;
-  font-weight: bold;
+/* "Events" title and assets */
+.title 
+{
+  text-align: center;
+  position: relative;
+  margin-left: 22vw;
+  margin-right: 22vw;
+  top: 8rem;
+
+  border-radius: 5rem;
+  padding: 3rem;
+
+  font-size: 2.938rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  color: white;
+
+  /* Gradient background */
+  background: linear-gradient(
+    90deg, /* Horizontal gradient */
+    rgb(48, 114, 200)0%, /* Darker shade on the left */
+    rgb(29, 42, 146) 100% /* Lighter shade on the right */
+  );
+
+  box-shadow: 0rem 0.188rem 0.438rem #043162
 }
 
-/* Club's Statement Part */
-.club-statement {
-  margin-left: 10.063rem;
-  margin-right: 10rem;
-  margin-top: 7rem;
-  margin-bottom: 8rem;
+/* Event name */
+#event_name 
+{
+  padding: 10%;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+  
+  line-height: 6.25rem;
+  font-size: 2.938rem;
+  color: #ffc436;;
 }
 
-/* Club's Statement Text */
-.club-statement-text {
+/* Event description */
+#event_description 
+{
+  padding-right: 20%;
+  padding-left: 10%;
+  padding-top: 1%;
+
   font-size: 1.563rem;
-  font-family: sans-serif;
   font-weight: 600;
-  color: #fff;
-
-  line-height: 2.5rem;
-}
-
-/* What We Provide Part */
-/* What We Provide Title */
-.what-we-provide-title {
-  margin-left: 10.063rem;
-  margin-right: 59.125rem;
-  margin-bottom: 1.125rem;
-
-  font-size: 2.25rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* What We Provide Text */
-.what-we-provide-text {
-  margin-left: 10.063rem;
-  margin-right: 40rem;
-  margin-bottom: 6.438rem;
-
-  font-size: 1.063rem;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: #fff;
-
-  width: 39.938rem;
-  height: 7.375rem;
-  line-height: 1.563rem;
-}
-
-/* Where We Meet Part */
-/* Where We Meet Title */
-.where-we-meet-title {
-  margin-left: 44rem;
-  margin-right: 28.063rem;
-  margin-bottom: 0.813rem;
-
-  font-size: 2.25rem;
-  font-family: sans-serif;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* Where We Meet Text */
-.where-we-meet-text {
-  margin-left: 44rem;
-  margin-right: 12.563rem;
-  margin-bottom: 5.938rem;
-
-  font-size: 1.063rem;
-  font-family: sans-serif;
-  font-weight: 500;
-  color: #fff;
-
-  line-height: 1.563rem;
-}
-
-/* Discord Link */
-.where-we-meet-text a:link {
-  color: #feb81a;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.where-we-meet-text a:visited {
-  color: #feb81a;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.where-we-meet-text a:hover {
-  color: black;
-  background-color: #feb81a;
-  font-weight: bolder;
-}
-
-.where-we-meet-text a:active {
-  color: rgb(0, 0, 0);
-  background-color: #feb81a;
-  font-weight: bolder;
-}
-
-/* Methods to LL */
-.methods-to-ll {
-  margin-bottom: 0rem;
-}
-/* Elevator Part */
-.methods-elevator {
-  margin-left: 44rem;
-
-  font-size: 1.063rem;
-  font-family: sans-serif;
-  color: #fff;
-}
-
-.methods-elevator-title {
-  font-size: 1.063rem;
-  margin-bottom: 0.625rem;
-}
-
-.methods-elevator-list {
-  margin-left: 1.875rem;
-  margin-right: 0.625rem;
-
-  padding-right: 0.625rem;
-
-  line-height: 1.563rem;
-}
-
-/* Stairs Part */
-.methods-stairs {
-  margin-left: 44rem;
-  margin-top: 1.25rem;
-
-  font-size: 1.063rem;
-  font-family: sans-serif;
-  color: #fff;
-}
-
-.methods-stairs-title {
-  font-size: 1.063rem;
-  margin-bottom: 0.625rem;
-}
-
-.methods-stairs-list {
-  margin-left: 1.875rem;
-  margin-right: 10.938rem;
-
-  padding-right: 0.625rem;
-
-  line-height: 1.563rem;
-}
-
-/* MLK Library Images Part */
-.mlk-images {
-  margin-left: 10.5rem;
-  float: left; /* Make the MLK Images Float Left of Where We Meet */
-}
-
-.mlk-images-entrance {
-  margin-bottom: 2.563rem;
-}
-
-/* navbar css  */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-li,
-a {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 1rem;
+  line-height: 3rem;
+  
   color: white;
-  text-decoration: none;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
+/* Event description */
+#provide_description 
+{
+  padding-right: 30%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-top: 1%;
 
-header {
-  background-color: #003e82;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.625rem 3%;
-}
-
-.logo {
-  margin-right: 0.625rem;
-  width: 4.375rem;
-  cursor: pointer;
-}
-
-.sjsu-game-dev {
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 3rem;
+  
   color: white;
-  font-family: "Poppins";
 }
 
-.nav-links {
-  list-style: none;
-  margin-left: auto;
+/* Event date */
+#event_date 
+{
+  color: white;
 }
 
-.nav-links li {
+/* background logo assets */
+
+#left_middle_logo4
+{
+  width: 21%;
+  transform: rotateX(200deg);
+  margin-left: -10.7vw;
+  margin-top: -28vh;
+  opacity: 0.7;
+}
+
+#left_bottom_logo4
+{
+  width: 21%;
+  transform: rotateX(220deg);
+  margin-left: -5vw;
+  margin-top: 3rem;
+  opacity: 0.7;
+}
+
+#right_bottom_logo4
+{
+  width: 27%;
+  margin-left: 71vw;
+  opacity: 0.7;
+}
+
+
+.sub-title
+{
+  padding-left: 10%;
+  padding-top: 1%;
+
+  font-size: 1.563rem;
+  font-weight: 600;
+  line-height: 3rem;
+  
+  font-size: 2.938rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  color: white;
+}
+
+.container
+{
   display: flex;
-  margin-left: auto;
-  display: inline-block;
-  padding: 0rem 1.25rem;
+  flex-direction: row; /* Stack items in a column */
+  align-items: flex-start; /* Align everything to the left */
+  max-width: 1100px;
+  margin-left: 10%;
+  gap: 20px; /* Space between images and text */
 }
 
-/* target nav tags and a tag inside them */
-.nav-links li a {
-  transition: all 0.3s ease 0s;
+.images
+{
+  flex: 2;
+  display: flex; /* Allocates more space to images */
+  display: flex;
+  flex-direction: column; /* Stacks images vertically */
+  gap: 20px; /* Space between images */
+  margin-top:0;
+  margin-right: 5rem;
 }
 
-.nav-links li a:hover {
-  color: #face0d;
+.image
+{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.text-content
+{
+  flex: 2;
+  text-align: left;
+  padding-left: 10px;
+  max-width: 11000px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.strong-title
+{
+  font-size: x-large;
+}
+
+.sub-title-fixed
+{
+  padding-top: 1%;
+  padding-bottom: 3%;
+
+  font-size: 1.563rem;
+  font-weight: 600;
+  line-height: 3rem;
+  
+  font-size: 2.938rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  color: white;
+}
+
+.bold-text
+{
+  font-size: x-large;
+  padding-top: 10%;
+}
+
+
 
