@@ -223,11 +223,11 @@ body
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   color: white;
   padding: 10px;
-  padding: 2%;
-  padding-bottom: 2%;
+  padding: 5%;
+  padding-bottom: 3%;
   font-size: 2.938rem;
   line-height: 2.6rem;
   font-weight: bold;
@@ -261,11 +261,11 @@ section {
   justify-content: center;
   flex-direction: column;
   width: 408px;
-  height:120px;
+  height: 90px;
   gap:5px;
   border: 3px solid #191D88;
   border-radius: 10px;
-  padding: 10px;
+  padding: 18px;
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -316,8 +316,9 @@ h2 {
 h3 {
   font-size: 16px;
   color: white;
-  margin: 10px 0;
-  font-weight: bold
+  font-weight: bold;
+  padding: 1%;
+  padding-top: 2%;
 }
 
 h6 {
@@ -337,8 +338,8 @@ dd {
 
 p {
   font-size: 16px;
-  margin: 1.5rem 0;
   color: #003e82;
+  text-align: left;
 }
 
 h4 {
@@ -358,12 +359,17 @@ h4 {
 }
 
   .faq-section {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      margin: left;
+      padding: 9%;
+      padding-top: 2%;
+      padding-bottom: 3%;
       background-color: transparent;
+  }
+
+  .pannel {
+      margin:left;
+      padding: 10px;
+      border-top: 1px
   }
   
   .faq-section h1 {
@@ -421,9 +427,10 @@ h4 {
 }
 
 .panel {
-  display: none;
+  margin:left;
   padding: 10px;
-  border-top: 1px
+  border-top: 1px;
+  padding-bottom: 10%;
 }
 
 .accordion.active + .panel {
@@ -457,5 +464,56 @@ top: 50px;
 left: 50px;
 }
 
+.container-4
+{
+  text-align:left;
+  padding: 8%;
+  padding-top: 2%;
+  padding-bottom:2%
+}
 
+.container-5
+{
+  text-align: left;
+  color: white;
+  padding: 10px;
+  padding: 8%;
+  padding-top: 8%;
+  padding-left: 8%;
+  padding-bottom: 10px;
+  font-size: 2.938rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+
+.container-6
+{
+  text-align: left;
+  color: white;
+  padding: 10px;
+  padding: 8%;
+  padding-top: 10%;
+  padding-left: 8%;
+  padding-bottom: 10px;
+  font-size: 2.938rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+
+#right_corner
+{
+  transform: scaleY(-1) scaleX(-1);
+  margin-bottom: 10px;
+  margin-left: 1.6rem;
+  float: right;
+  margin-right: 100px;
+}
+
+#left_corner
+{
+  margin-top: -4.5rem;
+  margin-right: 1.6rem;
+  text-align: left;
+  padding-bottom:15%;
+}
 
