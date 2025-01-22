@@ -222,5 +222,240 @@ body
   padding-top: 10%;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  padding: 2%;
+  padding-bottom: 2%;
+  font-size: 2.938rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+
+section {
+  background-color: white;
+  color: #003e82;
+  padding: 20px;
+}
+
+.container-1 {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-evenly; /* Align items evenly across the container */
+  gap: 20px; /* Space between items */
+  margin: 20px 0;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-evenly; /* Align items evenly across the container */
+  gap: 5px; /* Space between items */
+  margin: 1.5rem 0;
+}
+
+.container-3 {
+  display: flex;
+  align-items: center; /* Center items within each box */
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 408px;
+  height:120px;
+  gap:5px;
+  border: 3px solid #191D88;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.flexbox-item {
+  display: flex;
+  flex-direction: column; /* Align image and text vertically */
+  align-items: left; /* Center items within each box */
+  text-align: left;
+  width: 325px; /* Consistent width for all items */
+  margin: 10px;
+}
+
+.flexbox-item img {
+  width: 100%; /* Image fills the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Rounded corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+#Endlessette
+{
+  display: flex;
+  flex-direction: row; 
+  align-items: center; /* Center items within each box */
+  text-align: center;
+  width: 325px; 
+  margin-top: 1.5rem;
+}
+#Ben
+{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  text-align: center;
+  width: 325px; 
+  margin-top: 1.5rem;
+}
+h2 {
+  font-size: 16px;
+  color: #191D88;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 16px;
+  color: white;
+  margin: 10px 0;
+  font-weight: bold
+}
+
+h6 {
+  background-color: white;
+  color: #003e82;
+  margin: 10px 0;
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+
+dd {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #003e82;
+}
+
+p {
+  font-size: 16px;
+  margin: 1.5rem 0;
+  color: #003e82;
+}
+
+h4 {
+  font-size: 16px;
+  font: weight 12px;;
+  color: #191D88;
+  margin: 5px 0;
+  margin-bottom: 2rem;
+  align-items:center;
+}
+
+@media screen and (max-width: 768px) {
+  .container-1 {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+  .faq-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      background-color: transparent;
+  }
+  
+  .faq-section h1 {
+      text-align: center;
+      color: white;
+      font-weight: bolder;
+  }
+
+  .faq-section h3 {
+      text-align: left;
+      color: white;
+      background-color: transparent;
+  }
+
+  .faq-title
+  {
+      position: relative;
+      font-size: 1.563rem;
+      font-weight: 600;
+      width: 20rem;
+      top: -5rem;
+      margin: auto;
+  }
+.accordian {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  transition: 0,4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.accordion i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.accordion h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold
+  
+}
+
+.panel {
+  display: none;
+  padding: 10px;
+  border-top: 1px
+}
+
+.accordion.active + .panel {
+  display: block;
+}
+
+p {
+  font-size: 16px;
+  color: white;
+}
+
+#left_corner
+{
+position: relative;
+margin-bottom: -4rem;
+margin-right: 1.6rem;
+width: 87px;
+height: 82px;
+top: 50px;
+left: 50px;
+}
+
+#right_corner
+{
+position: relative;
+  transform: scaleY(-1) scaleX(-1);
+margin-bottom: 1.5rem;
+width: 87px;
+height: 82px;
+top: 50px;
+left: 50px;
+}
+
 
 
