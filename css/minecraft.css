@@ -26,29 +26,31 @@ body
   background-image: url(../img/craft_4.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
   width: 100%;
-  height: 28rem;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-  margin-bottom: 10rem;
+  min-height: 60rem;
+  box-shadow: 0rem 0.188rem 0.438rem #000000;
+  position: relative; /* Ensure proper stacking context */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow for visibility */
+  z-index: 1; /* Ensure shadow is above other elements */
 }
 
-/* "Events" title and assets */
-.title 
+#header_text
 {
   text-align: center;
-  position: relative;
-  margin-left: 22vw;
-  margin-right: 22vw;
-  top: 8rem;
+  position: relative; 
+  margin-left: 23vw;
+  margin-right: 23vw;
+  top: 15rem;
+  margin-bottom: 14rem;
 
   border-radius: 5rem;
-  padding: 3rem;
+  padding: 4rem;
 
-  font-size: 2.938rem;
-  font-weight: 600;
-  line-height: 2.1rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  font-size: 3.2rem;
+  font-weight: 700;
 
   color: white;
 
@@ -59,119 +61,228 @@ body
     rgb(29, 42, 146) 100% /* Lighter shade on the right */
   );
 
-  box-shadow: 0rem 0.188rem 0.438rem #043162
+  box-shadow: 0rem 0.188rem 0.438rem #000000
 }
 
-/* Event name */
-#event_name 
+#header_text_description
 {
-  padding: 10%;
-  padding-bottom: 1rem;
-  padding-top: 25rem;
-  
-  line-height: 6.25rem;
-  font-size: 2.938rem;
-  color: #ffc436;;
-  margin-left: 872px;
-
+  font-size: 1.8rem;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-/* Event description */
-#event_description 
+#discord-link
 {
-  padding: 10%;
-  padding-top: 4%;
+  text-align: center;
+  position: relative;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 20rem;
 
-  font-size: 1.563rem;
-  font-weight: 600;
-  line-height: 3rem;
-  margin-left: 522px;
-  color: #043162;
+  border-radius: 5rem;
+  padding: 1rem;
+  padding-top: 0rem;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+
+  color: white;
+  background-color: rgb(25, 29, 136);
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
 }
 
-/* Event date */
-#event_date 
+#discord-link:hover {
+  transform: scale(1.08);
+  text-decoration: underline;
+}
+
+#discord-logo
 {
+  position: relative;
+  top: 1rem;
+  left: -0.5rem;
+
+  width: 20%;
+  height: auto;
+}
+
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+
+  /* Gradient background */
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+    );
+
   color: white;
 }
 
-/* background logo assets */
-
-#left_middle_logo4
+.title
 {
-  width: 25%;
-  margin-left: 0vw;
-  margin-top: -77vh;
-  opacity: 0.7;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  color: white;  
 }
 
-#left_bottom_logo4
-{
-  width: 85%;
-  margin-left: -10vw;
-  margin-top: -400vh;
+.sub-title,
+.description {
+  text-align: left; /* Align text content to the left */
+  width: 12%; /* Set a consistent width for alignment */
+  margin-left: 60rem;
+  margin-top: -7rem;
+  color: #191D88;
+  font-weight: 600;
+
   
+
 }
 
-#right_bottom_logo4
+/* spacing between paragraphs */
+.sub-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description
 {
-  width: 35%;
-  margin-left: 64vw;
-  margin-top: 0vh;
+  margin-bottom: 2rem;
 }
 
-#control
+/* Catchphrase container */
+.catchphrase {
+  margin-top: 3rem;
+  margin-bottom: -30rem;
+  margin-left: 50rem;
+  display: flex;
+
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+}
+
+/* Text container styling */
+.catchphrase-text {
+
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  line-height: 1.5; /* Line spacing for multiple lines */
+  color: rgb(167, 30, 30);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* Highlight specific text */
+.highlight {
+  color: #FFC436; /* Blue color for "Forging Realities" */
+}
+
+/* Corner images */
+.corner {
+  width: 4rem; /* Adjust size of the corner brackets */
+}
+
+/* Mascot images */
+.mascot {
+  width: 5rem; /* Mascots size adjustment */
+  position: relative;
+  top: -0.5rem; /* Align mascots vertically with the text */
+}
+
+/* Rotate right corner */
+#right_corner {
+  transform: rotate(180deg); /* Flips the right corner */
+}
+
+/* Bracket Adjustment */
+#left_corner {
+  position: relative;
+  top: 1rem; /* Moves the left bracket down */
+  left: 112rem;
+
+}
+#right_corner {
+  position: relative;
+  top: -1.5rem; /* Moves the right bracket up */
+  left: -2rem;
+
+}
+
+
+.corner2 {
+  width: 34rem; /* Adjust size of the corner brackets */
+}
+#right_corner2 {
+  transform: rotate(180deg); /* Flips the right corner */
+}
+#left_corner2 {
+  position: relative;
+  top: -34rem; /* Moves the left bracket down */
+  left: 33rem;
+}
+#right_corner2 {
+  position: relative;
+  top: -2rem; /* Moves the right bracket up */
+}
+.corner3 {
+  width: 154rem; /* Adjust size of the corner brackets */
+}
+#left_corner3 {
+  position: relative;
+  top: 14rem; /* Moves the left bracket down */
+  left: -60rem;
+  z-index: -1; /* Places the element behind the text */
+
+}
+.corner4 {
+  width: 64rem; /* Adjust size of the corner brackets */
+}
+#left_corner4 {
+  position: relative; /* Ensure the element can be layered */
+  top: 8rem; /* Moves the left bracket down */
+  left: -135rem;
+  z-index: -1; /* Places the element behind the text */
+}
+
+
+.corner5 {
+  width: 154rem; /* Adjust size of the corner brackets */
+}
+#left_corner5 {
+  position: relative;
+  top: 34rem; /* Moves the left bracket down */
+  left: 110rem;
+}
+.corner6 {
+  width: 1111px;
+}
+#left_corner6 {
+  position: relative;
+  top: 198rem; /* Moves the left bracket down */
+  left: -34rem;
+}
+.video
 {
-  width: 85%;
-  margin-left: 10vw;
-  margin-top: 10vh;
-  margin-bottom: -1610px;
-
-}
-
-#whitesplash
-{
-  
-  width: 58%;
-  margin-left: 25vw;
-  margin-top: -10vh;
-  margin-bottom: -900px;
-
-
-}
-
-
-#bracket
-{
-  padding-top: 25rem;
-
-  width: 3%;
-  margin-left: 45vw;
-  margin-top: -510vh;
-
-}
-
-#bracket2
-{
-  width: 3%;
-  margin-left: 50vw;
-  margin-top: -477vh;
-}
-
-/* Google calendar */
-.calendar {
-	text-align: center;
-}
-
-.calendar iframe {
-  width: 60vw;
-  height: 50vw;
+  align-self: center;
+  margin-bottom: 3rem;
 }
 
 .image1
 {
   text-align: center;
-  margin-top: -700px;
+  margin-top: 270px;
   margin-bottom: 800px;
 }
 
