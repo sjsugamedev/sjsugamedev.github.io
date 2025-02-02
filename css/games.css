@@ -142,23 +142,29 @@ body
   justify-content: center;
 }
 
-#gamelink {
-  padding: 2rem;
+.games > div {
+  width: 25rem;
+  height: 42rem;
   margin: 1.5rem;
   border-radius: 4rem;
   text-align: center;
   color: white;
+}
 
+.games > div:hover {
+  transform: scale(1.1);
+}
+
+#gamelink {
   text-decoration: none;
   color: white;
-  display: block;
-
-  background-color: #003e82;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 #gamelink:hover {
-  background: rgb(0,62,130);
-background: linear-gradient(0deg,rgba(0,62,130,1) 30%, rgb(30, 125, 176) 93%);
+  background-color: linear-gradient(0deg,rgba(0,62,130,1) 30%, rgb(30, 125, 176) 93%);
 }
 
 #gameelt {
@@ -169,6 +175,7 @@ background: linear-gradient(0deg,rgba(0,62,130,1) 30%, rgb(30, 125, 176) 93%);
 
 #gametitle {
   position: relative;
+  padding-top: 1.5rem;
   font-size: 1.563rem;
   font-weight: 600;
   width: 20rem;
@@ -177,6 +184,7 @@ background: linear-gradient(0deg,rgba(0,62,130,1) 30%, rgb(30, 125, 176) 93%);
 
 #gamedescription {
   position: relative;
+  margin: auto;
   font-size: 1.063rem;
   line-height: 2rem;
   width: 21rem;
