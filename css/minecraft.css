@@ -18,6 +18,7 @@ body
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
     );
+    
 }
 
 /* header image */
@@ -28,11 +29,12 @@ body
   background-repeat: no-repeat;
   background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
   width: 100%;
-  min-height: 60rem;
+  min-height: 40rem;
+
   box-shadow: 0rem 0.188rem 0.438rem #000000;
   position: relative; /* Ensure proper stacking context */
+  z-index: 10; /* Places the element behind the text */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow for visibility */
-  z-index: 1; /* Ensure shadow is above other elements */
 }
 
 #header_text
@@ -57,8 +59,10 @@ body
   /* Gradient background */
   background: linear-gradient(
     90deg, /* Horizontal gradient */
+    
     rgb(48, 114, 200)0%, /* Darker shade on the left */
     rgb(29, 42, 146) 100% /* Lighter shade on the right */
+    
   );
 
   box-shadow: 0rem 0.188rem 0.438rem #000000
@@ -69,6 +73,7 @@ body
   font-size: 1.8rem;
   margin-left: 3%;
   margin-right: 3%;
+  
 }
 
 #discord-link
@@ -89,6 +94,7 @@ body
   color: white;
   background-color: rgb(25, 29, 136);
   box-shadow: 0rem 0.188rem 0.438rem #043162;
+  
 }
 
 #discord-link:hover {
@@ -163,8 +169,8 @@ body
 /* Catchphrase container */
 .catchphrase {
   margin-top: 3rem;
-  margin-bottom: -30rem;
-  margin-left: 50rem;
+  margin-bottom: -28rem;
+  margin-left: 40rem;
   display: flex;
 
   align-items: center; /* Vertically aligns mascots and text */
@@ -172,16 +178,56 @@ body
   gap: 2rem; /* Space between images and text */
   padding: 2rem 0; /* Adds vertical spacing for the section */
   text-align: center; /* Centers the text inside the text container */
+  z-index: 1; /* Higher than the corners */
+
+}
+.catchphrase2 {
+  margin-top: -10rem;
+  font-weight: 600;
+
+  margin-bottom: -5rem;
+  margin-left: -5rem;
+  display: flex;
+  font-size: 52px; /* You can use any size you prefer */
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+  z-index: 1; /* Higher than the corners */
+  color:  rgb(29, 42, 146)
+
+
 }
 
+.catchphrase3{
+  color:  rgb(29, 42, 146);
+  font-weight: 600;
+
+  margin-top: -17rem;
+  margin-bottom: 6rem;
+  margin-left: -50rem;
+  display: flex;
+  font-size: 52px; /* You can use any size you prefer */
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+  z-index: 1; /* Higher than the corners */
+
+}
 /* Text container styling */
 .catchphrase-text {
+  font-weight: 600;
+  margin-top: -14rem;
 
-  font-size: 3rem; /* Adjust text size */
+  font-size: 5rem; /* Adjust text size */
   font-weight: bold;
   line-height: 1.5; /* Line spacing for multiple lines */
   color: rgb(167, 30, 30);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+
 }
 
 /* Highlight specific text */
@@ -209,14 +255,17 @@ body
 /* Bracket Adjustment */
 #left_corner {
   position: relative;
-  top: 1rem; /* Moves the left bracket down */
+  top: -5rem; /* Moves the left bracket down */
   left: 112rem;
+  width: 5rem; /* Mascots size adjustment */
+
 
 }
 #right_corner {
   position: relative;
-  top: -1.5rem; /* Moves the right bracket up */
+  top: -8.5rem; /* Moves the right bracket up */
   left: -2rem;
+  width: 5rem; /* Mascots size adjustment */
 
 }
 
@@ -224,14 +273,14 @@ body
 .corner2 {
   width: 34rem; /* Adjust size of the corner brackets */
 }
-#right_corner2 {
-  transform: rotate(180deg); /* Flips the right corner */
-}
+
 #left_corner2 {
   position: relative;
-  top: -34rem; /* Moves the left bracket down */
-  left: 33rem;
+  top: -30rem; /* Moves the left bracket down */
+  left: 60rem;
+  transform: scale(1.5); /* Scales the element to 1.5x its size */
 }
+
 #right_corner2 {
   position: relative;
   top: -2rem; /* Moves the right bracket up */
@@ -242,8 +291,9 @@ body
 #left_corner3 {
   position: relative;
   top: 14rem; /* Moves the left bracket down */
-  left: -60rem;
+  left: -63rem;
   z-index: -1; /* Places the element behind the text */
+  transform: scale(1.5); /* Scales the element to 1.5x its size */
 
 }
 .corner4 {
@@ -251,9 +301,11 @@ body
 }
 #left_corner4 {
   position: relative; /* Ensure the element can be layered */
-  top: 8rem; /* Moves the left bracket down */
-  left: -135rem;
+  top: 4rem; /* Moves the left bracket down */
+  left: -138rem;
   z-index: -1; /* Places the element behind the text */
+  transform: scale(1.5); /* Scales the element to 1.5x its size */
+
 }
 
 
@@ -263,16 +315,20 @@ body
 #left_corner5 {
   position: relative;
   top: 34rem; /* Moves the left bracket down */
-  left: 110rem;
+  left: 111.9rem;
+  transform: scale(1.5); /* Scales the element to 1.5x its size */
+
 }
-.corner6 {
-  width: 1111px;
-}
+
 #left_corner6 {
   position: relative;
-  top: 198rem; /* Moves the left bracket down */
-  left: -34rem;
+  top: 158rem; /* Moves the left bracket down */
+  left: -10rem;
+  width: 200%; /* Increase width */
+  height: 200%; /* Increase height */
+  transform: scale(3.5); /* Scales the element to 1.5x its size */
 }
+
 .video
 {
   align-self: center;
@@ -284,6 +340,8 @@ body
   text-align: center;
   margin-top: 270px;
   margin-bottom: 800px;
+  z-index: 1; /* Higher than the corners */
+
 }
 
 .image2
@@ -292,6 +350,8 @@ body
   margin-top: -730px;
   margin-bottom: 300px;
   margin-left: 222;
+  z-index: 1; /* Higher than the corners */
+
 }
 
 
