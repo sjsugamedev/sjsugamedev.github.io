@@ -314,7 +314,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
   padding: 1%;
@@ -337,7 +337,7 @@ dd {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   color: #003e82;
   text-align: left;
 }
@@ -364,11 +364,13 @@ h4 {
       padding-top: 2%;
       padding-bottom: 3%;
       background-color: transparent;
+      font-size: 25px;
   }
 
   .pannel {
       margin:left;
       padding: 10px;
+      font-size: 20px;
       border-top: 1px
   }
   
