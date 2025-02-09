@@ -1,344 +1,280 @@
-* {
-  font-family: "Poppins", sans-serif;
+/* reset global margins and padding */
+* 
+{ 
+  font-family: "Poppins";
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures that padding and border don't cause overflow */
+  padding: 0; 
 }
 
-/* Body styling */
-body {
+/* applies to all elements on page */
+body 
+{
   height: auto;
-  margin: 0;
+  margin: auto;
   background: linear-gradient(
     180deg,
     #003e82 0%,
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-  );
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+    );
 }
 
-/* Header image */
-#header_image {
+/* header image */
+#header_image 
+{
   background-image: url(../img/craft_4.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
   width: 100%;
-  min-height: 40rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 1;
-  max-width: 100%; /* Prevents image from overflowing */
+  min-height: 60rem;
+  box-shadow: 0rem 0.188rem 0.438rem #000000;
+  position: relative; /* Ensure proper stacking context */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow for visibility */
+  z-index: 1; /* Ensure shadow is above other elements */
 }
 
-/* Header text */
-#header_text {
+#header_text
+{
   text-align: center;
-  margin: 15rem 23vw 14rem;
+  position: relative;
+  margin-left: 23vw;
+  margin-right: 23vw;
+  top: 15rem;
+  margin-bottom: 14rem;
+
   border-radius: 5rem;
   padding: 4rem;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
   font-size: 3.2rem;
   font-weight: 700;
+
   color: white;
-  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
-  max-width: 90%; /* Prevents text box from overflowing */
-  overflow-wrap: break-word;
-  position: relative; /* Ensure it stays above other content */
-  z-index: 2; /* Make sure text stays above images */
+
+  /* Gradient background */
+  background: linear-gradient(
+    90deg, /* Horizontal gradient */
+    rgb(48, 114, 200)0%, /* Darker shade on the left */
+    rgb(29, 42, 146) 100% /* Lighter shade on the right */
+  );
+
+  box-shadow: 0rem 0.188rem 0.438rem #000000
 }
 
-/* Header text description */
-#header_text_description {
+#header_text_description
+{
   font-size: 1.8rem;
-  margin: 0 3%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-/* Discord link */
-#discord-link {
-  text-align: center;
-  margin: 20rem auto;
-  border-radius: 5rem;
-  padding: 1rem 0;
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: white;
-  background-color: rgb(25, 29, 136);
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-  width: fit-content;
-  max-width: 100%; /* Prevents overflow */
-}
-
-#discord-link:hover {
-  transform: scale(1.08);
-  text-decoration: underline;
-}
-
-/* Discord logo */
-#discord-logo {
-  position: relative;
-  top: 1rem;
-  left: -0.5rem;
-  width: 20%;
-  height: auto;
-}
-
-/* Main section */
 .main-section {
   display: flex;
   flex-direction: column;
+
+  /* Gradient background */
   background: linear-gradient(
     180deg,
     #003e82 0%,
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-  );
+    );
+
   color: white;
-  width: 100%; /* Ensures it stays within viewport */
-  overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
-/* Sub-title and description */
+.title
+{
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
+
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  color: white;  
+}
+
 .sub-title,
 .description {
-  text-align: left;
-  width: 100%;
-  margin-left: 5vw; /* Adjusted to not cause overflow */
-  color: #191D88;
-  font-weight: 600;
+  text-align: left; /* Align text content to the left */
+  width: 48%; /* Set a consistent width for alignment */
+  margin: 0 auto; /* Center the element within the parent */
 }
 
+/* spacing between paragraphs */
 .sub-title {
-  margin: 2rem 0 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.description {
+.description
+{
   margin-bottom: 2rem;
 }
 
 /* Catchphrase container */
-.catchphrase {
-  margin: 3rem 0 -28rem 40rem;
+.title {
+  margin-top: 42rem;
+  margin-bottom: 5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem 0;
-  text-align: center;
-  z-index: 2; /* Ensure catchphrase is above the images */
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+}
+
+/* Text container styling */
+.title-text {
+ 
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.5; /* Line spacing for multiple lines */
+  color: #ffc436;;
+  z-index: 1;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
 }
 
 .text {
-  font-weight: 600;
-
-  margin: -10rem -5rem -5rem;
+  margin-top: -8rem;
+  margin-bottom: -22rem;
   display: flex;
-  font-size: 52px;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem 0;
-  text-align: center;
-  color: rgb(29, 42, 146);
-  z-index: 20; /* Ensure it stays above the image */
-
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
 }
 
-/* Title styling */
-.title {
+/* Text container styling */
+.text2 {
+  font-size: 
+  36px;
   font-weight: 600;
-  margin: -2rem 0 11rem;
-  text-align: center;
-  font-size: 5rem;
-  line-height: 1.5;
-  color: #ffc436;;
-  z-index: 2; /* Ensure it stays above the image */
+  line-height: 1.5; /* Line spacing for multiple lines */
+  color: #191D88;  
+  z-index: 1;
 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
 }
-
 /* Highlight specific text */
 .highlight {
-  color: #FFC436;
+  color: #FFC436; /* Blue color for "Forging Realities" */
 }
 
 /* Corner images */
 .corner {
-  width: 4rem;
+  width: 4.5rem; /* Adjust size of the corner brackets */
 }
 
-#left_cornerbracket {
+/* Mascot images */
+.whiteslame {
+  align-self: center;
+
+  width: 85rem; /* Mascots size adjustment */
   position: relative;
-  top: -5rem;
-  left: 112rem;
-  width: 5rem;
+  top: -115.5rem; /* Align mascots vertically with the text */
 }
 
-#right_cornerbracket {
+.game {
+  align-self: center;
+
+  width: 135rem; /* Mascots size adjustment */
   position: relative;
-  top: 8.5rem;
-  left: -2rem;
-  width: 5rem;
-  transform: rotate(180deg);
-}
-
-/* Corner adjustments */
-#topright_corner {
-  width: 46%;
-  margin-left: 53.7vw;
-  margin-top: -28vh;
-  opacity: 0.7;
-transform: translateY(-10%);
-}
-
-#bottomleft_corner {
-  width: 66%;
-  margin-left: 0vw;
-  margin-top: -28vh;
-transform: translateY(-70%);
-margin-bottom: -70rem;
-
-
-}
-#left_middle_logo4
-{
-  width: 21%;
-  margin-left: 0vw;
-  margin-top: -28vh;
-  opacity: 0.7;
-}
-
-#right_middle_logo4
-{
-  width: 31%;
-  margin-left: 68.2vw;
-  margin-top: -28vh;
-  opacity: 0.7;
-  transform: translateY(90%);
-
-}
-
-
-#bot_middle_logo4
-{
-  width: 47%;
-  margin-left: 0vw;
-
-  margin-top: -18vh;
-  opacity: 0.7;
-  transform: translateY(90%);
-
-}
-/* Game controller and other images */
-
-
-
-.gamecontroller{
-  text-align: center;
-  transform: translateY(-173%);
-  z-index: -20; /* Ensure it stays behind the images */
-
-}
-
-.whiteslam{
-  text-align: center;
-padding-left: 1%;
-  transform: translateY(-455%);
-  z-index: -20; /* Ensure it stays behind the images */
-
-}
-/* Game controller and other images */
-
-
-/* Container to hold image1 and image2 together */
-.image-container {
-  margin-top: 42rem;
-  display: flex;
-  flex-direction: column;  /* Stack images vertically */
-  justify-content: center;
-  align-items: center;
-  gap: 20px;  /* Adjust space between images as needed */
-  transition: transform 0.3s ease-in-out; /* Smooth transition when scaling */
-  transform-origin: center center; /* Ensure scaling happens from the center */
-  width: 100%; /* Ensure it does not overflow */
-  max-width: 100%; /* Prevents horizontal overflow */
-  position: relative; /* Ensures the gamecontroller and whiteslam images are positioned relative to this */
-}
-
-/* Image 1 */
-.image1 {
-  max-width: 100%;
-  margin-bottom: 10rem;
-  margin-top: -102rem;
-  object-fit: contain;
-  transition: transform 0.3s ease-in-out; /* Smooth scaling */
-  z-index: 1; /* Ensure it stays behind the images */
-}
-
-/* Image 2 */
-.image2 {
-  max-width: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease-in-out; /* Smooth scaling */
-  margin-bottom: 20rem;
-  z-index: 1; /* Ensure it stays behind the images */
-}
-
-#event_name 
-{
-  margin-top: -62rem;
-
-  padding: 10%;
-  padding-bottom: 66rem;
-  transform: translateY(-87%);
-
-  line-height: 6.25rem;
-  font-size: 2.938rem;
-  color: #ffc436;;
-  text-align: center;
-}
-
-
-#event_description 
-{
-  text-align: center;
-
-  transform: translateY(-893%);
-  padding: 10%;
-  padding-top: 0%;
-  font-size: 1.563rem;
-  font-weight: 600;
-  line-height: 3rem;
   
-  color:     #003e82;
+  top: -30.5rem; /* Align mascots vertically with the text */
+}
+/* Rotate right corner */
+#right_corner {
+  transform: rotate(180deg); /* Flips the right corner */
+}
+
+/* Bracket Adjustment */
+#left_corner {
+  position: relative;
+  top: 1rem; /* Moves the left bracket down */
+  left: 2rem;
+  z-index: 1;
+
+}
+#right_corner {
+  position: relative;
+  top: -0.5rem; /* Moves the left bracket down */
+  left: -2.5rem;
+  z-index: 1;
+
+}
+.slam {
+  width: 95rem; /* Adjust size of the corner brackets */
+}
+.controller {
+
+  width: 144rem; /* Ajust size of the corner brackets */
+}
+#whiteslam {
+  position: relative;
+  top: -17rem; /* Moves the left bracket down */
+  left: 87rem;
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center;
+}
+#gamecontroller {
+  position: relative;
+  top: -5rem; /* Moves the left bracket down */
+  left: -48rem;
+}
+.image1
+{
+
+  align-self: center;
+  margin-bottom: 13rem;
+  margin-top: -84rem;
+  z-index: 1;
+
+}
+.image2
+{
+
+  align-self: center;
+  margin-bottom: -303rem;
+  z-index: 1;
+
 
 }
 
+/* Flexbox Layout for the logo container */
+.logo-container {
 
-/* Zoom behavior on the container when zooming in or out */
-@media screen and (max-width: 1200px) {
-  .image-container {
-    transform: scale(0.8); /* Shrink the images at smaller screen widths */
-  }
+  display: flex;
+  justify-content: space-between; /* Distribute items on the left and right */
+  align-items: center; /* Vertically align the logos */
 }
 
-@media screen and (max-width: 900px) {
-  .image-container {
-    transform: scale(0.7); /* Shrink the images even more */
-  }
+#left_middle_logo4 {
+  width: 900px; /* Fixed width */
+  margin-bottom: -200px; /* Fixed bottom margin */
+  margin-top: 700px; /* Fixed top margin */
+  transform:translateY(-22%)
 }
 
-@media screen and (max-width: 600px) {
-  .image-container {
-    transform: scale(0.5); /* Even smaller on very small screens */
-  }
-}
+#right_middle_logo4 {
+  width: 1000px; /* Fixed width */
+  margin-top: 100px; /* Adjust this to move the logo vertically */
+  transform:translateY(64%)
 
-/* Scaling the images on larger screens */
-@media screen and (min-width: 1600px) {
-  .image-container {
-    transform: scale(1.2); /* Scale images up on large screens */
-  }
+}
+#left_down {
+
+  width: 1700px; /* Fixed width */
+  margin-bottom: 200px; /* Fixed bottom margin */
+  margin-top: 700px; /* Fixed top margin */
+  transform:translateY(-2%)
+
 }
