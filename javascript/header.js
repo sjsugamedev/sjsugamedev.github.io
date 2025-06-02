@@ -119,12 +119,9 @@ headerTemplate.innerHTML =
       
       <nav>
         <ul class="nav-links">
-          <li> <a href="">About</a></li>
-          <li> <a href="">Knowledge Base</a></li>
-          <li> <a href="">Games</a></li>
+          <li> <a href="about.html">About</a></li>
+          <li> <a href="games.html">Games</a></li>
           <li> <a href="events.html">Events</a></li>
-          <li> <a href="">Workshop</a></li>
-          <li> <a href="">FAQ</a></li>
         </ul>
       </nav>
     </header>

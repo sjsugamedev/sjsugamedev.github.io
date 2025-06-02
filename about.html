@@ -1,112 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <script src="javascript/footer.js" type="text/javascript" defer></script>
-    <script src="javascript/header.js" type="text/javascript" defer></script>
-    <title>About Us</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- Navbar and Logo -->
-      <!--navbar & logo-->
-      <header-component></header-component>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/about.css" type="text/css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-      <!-- Main content of webpage-->
-      <main>
-        <div class="about-us-title">
-          <h1 class="about-us-title-text">About Us</h1>
-        </div>
 
-        <!-- Club's Statement -->
-        <div class="club-statement">
-          <h4 class="club-statement-text">
-            The Game Development Club was founded to serve as an environment for
-            people to learn about the process of developing games, to play and
-            understand game design, and to collaborate with others in
-            researching and creating their own games.
-          </h4>
-        </div>
+  <script src="javascript/footer.js" type="text/javascript" defer></script>
+  <script src="javascript/header.js" type="text/javascript" defer></script>
+  <title>About</title>
+</head>
 
-        <!-- What We Provide -->
-        <div class="what-we-provide">
-          <h2 class="what-we-provide-title">What We Provide</h2>
-          <p class="what-we-provide-text">
-            By providing tools, resources, and many forms of inspiration and
-            motivation we help people learn about the game development process
-            regardless of their level of experience. We also participate in game
-            jams and reach out to industry professionals who can elaborate on
-            their experiences and teach fundamental game making ideas to our
-            club.
-          </p>
-        </div>
-
-        <!-- Images of the Library's Entrance and Google Map -->
-        <div class="mlk-images">
-          <div class="mlk-images-entrance">
-            <img
-              src="img/mlk_lib.png"
-              alt="Image: Entrance of MLK Library"
-              width="440"
-              height="467"
-            />
-          </div>
-
-          <div class="mlk-images-googlemap">
-            <img
-              src="img/location.png"
-              alt="Image: Google Map Location of MLK Library"
-              width="440"
-              height="467"
-            />
-          </div>
-        </div>
-
-        <!-- Where We Meet -->
-        <div class="where-we-meet">
-          <h2 class="where-we-meet-title">Where We Meet</h2>
-          <p class="where-we-meet-text">
-            We meet every <strong>Thursday at 7:00 PM</strong> at the MLK
-            Library's Innovation Center, located on the Lower Level (the
-            basement level) on our
-            <a href="https://discord.com/invite/xGv8qYA" target="_blank"
-              ><strong>Discord Server</strong></a
-            >. Everyone is welcome, even non-students!
-          </p>
-        </div>
-
-        <!-- Methods to get to the LL -->
-        <div class="methods-to-ll">
-          <div class="methods-elevator">
-            <h5 class="methods-elevator-title">Elevator</h5>
-            <ul class="methods-elevator-list">
-              <li>
-                Go to the elevators and hit the LL button, we’ll be to the right
-                after exiting. We’ll be immediately on your right when entering
-                the Innovation Centre.
-              </li>
-            </ul>
-          </div>
-
-          <div class="methods-stairs">
-            <h5 class="methods-stairs-title">Stairs</h5>
-            <ul class="methods-stairs-list">
-              <li>
-                From the ground floor go to the stairs next to the elevator and
-                go down to the very bottom of the stairs. From there go through
-                the doorway and turn right past the elevators. We’ll be
-                immediately on your right when entering the Innovation Centre
-              </li>
-            </ul>
-          </div>
-        </div>
-      </main>
+<body>
+  <!--navbar & logo-->
+  <header-component></header-component>
+  
+  <!--header image and page title-->
+  <div id="header_image">
+    <div class="title">
+      <strong>About Our Club</strong>
+      <div style="font-size: 1.563rem">
+      </div>
     </div>
-  </body>
+  </div>
+
+  <!--background logo assets-->
+
+  <!--event entries-->
+  <div class="events">
+    <p id="event_description"> <!--event description-->
+        The Game Development Club was founded to serve as an environment for people to learn about the process of developing games, to play and understand game design, and to collaborate with others in researching and creating their own games.
+    </p>
+  </div>
+
+  <div>
+    <img id="left_middle_logo4" src="assets/gamedev_assets_logo4.svg">
+  </div>
+
+  <!--paragraph 1-->
+  <div class="sub-title">
+    <strong>What We Provide</strong>
+  </div>
+
+  <div class="events">
+    <p id="provide_description">By providing tools, resources, and many forms of inspiration and motivation we help people learn about the game development process regardless of their level of experience. We also participate in game jams and reach out to industry professionals who can elaborate on their experiences and teach fundamental game making ideas to our club.</p>
+  </div>
+
+  <div class="container">
+    <div class="images">
+      <img src="img/mlk_lib.png" alt="Photo of Library" class="image">
+      <img src="img/location.png" alt="Map of Location" class="image">
+    </div>
+
+    <div class="text-content">
+      <div class="sub-title-fixed">
+        <strong>Where We Meet:</strong>
+      </div>
+      <p>We meet every Thursday at <strong>7:00 PM</strong> at the MLK Library's Innovation Center, located on the Lower Level (the basement level) on our Discord Server. Everyone is welcome, even non-students!</p>
+      <p class="bold-text">
+        <strong >Elevator</strong>
+      </p>
+      <li>Go to the elevators and hit the LL button, we’ll be to the right after exiting. We’ll be immediately on your right when entering the Innovation Centre</li>
+
+      <p class="bold-text">
+        <strong >Stairs</strong>
+      </p>
+      <li>From the ground floor go to the stairs next to the elevator and go down to the very bottom of the stairs. From there go through the doorway and turn right past the elevators.  We’ll be immediately on your right when entering the Innovation Centre</li>
+    </div>
+  </div>
+
+
+  <!--background logo assets-->
+  <div>
+    <img id="left_bottom_logo4" src="assets/gamedev_assets_logo4.svg">
+  </div>
+
+  <div>
+    <img id="right_bottom_logo4" src="assets/gamedev_assets_logo4.svg">
+  </div>
+
+  <!--padding for bottom-->
+  <div style="margin-bottom: 6rem;"></div>
+
   <!--footer-->
-  <footer-component></footer-component>
+  <body>
+    <header-component></header-component>
+    <div>
+        <h1 style= "color:white"> Our Officers</h1>
+        <div style="color:#003e82">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+        <meta charset="UTF-8">
+    </div>
+    
+    <section>
+        <div class="container-1">
+            <div class="flexbox-item Jessica_Image"> 
+                <img src="officerimages/Jessica.jpg" alt="Jessica" width="256" height="200">
+            </div>
+            <div class="flexbox-item Jessica">
+                <h2>Jessica (President)</h2>
+                    <dt> 
+                        <dd>3rd Year</dd>
+                        <dd>Major: Business Admin Concentration Management</dd>
+                        <dd>Role: Producer/Game Designer</dd>
+                        <dd>About: As president, I foster a collaborative and inclusive environment where members of all experience levels create games! I organize workshops, guest speaker events, and hands-on activities that guide members through the game development process!</dd>
+                    </dt>
+            </div>
+            <div class="flexbox-item Kezia_Image"> 
+                <img src="officerimages/Kezia.png" alt="Kezia" width="256" height="200"> 
+            </div>
+            <div class="flexbox-item Kezia">
+                <h2>Kezia (Vice President)</h2>
+                    <dd>4th Year</dd>
+                    <dd>Major: Graphic Design BFA</dd>
+                    <dd>Role: Producer/Visual Artist</dd>
+                    <dd>About:</dd>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-1">
+            <div class="flexbox-item Guzel_Image">
+                <img src="officerimages/guzel_ug.jpg" alt="Guzel" width="256" height="200">
+            </div>
+            <div class="flexbox-item Guzel">
+                <h2>Guzel (Treasurer)</h2>
+                    <dd>4th Year</dd>
+                    <dd>Major: Computer Science</dd>
+                    <dd>Role: Game Designer/Artist</dd>
+                    <dd>About:</dd>
+            </div>
+            <div class="flexbox-item Mikyle_Image">
+                <img src="officerimages/Mikyle.png" alt="Mikyle" width="256" height="200">
+            </div>
+            <div class="flexbox-item Mikyle">
+                <h2>Mikyle (Event Coordinator)</h2> 
+                    <dd>3rd Year</dd>
+                    <dd>Role: Technical Artist/TD</dd>
+                    <dd>About: As Event Coordinator, I help coordinate the overall semester meeting itinerary, as well as hybrid game jams that focus on supporting teams to get across the finish line! </dd>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-1">
+            <div class="flexbox-item Natalie_Image">
+                <img src="officerimages/Natalie.jpg" alt="Natalie" width="256" height="200">
+            </div>
+            <div class="flexbox-item Natalie">
+                <h2>Natalie (Graphic Design Lead)</h2>
+                    <dd>3rd Year</dd>
+                    <dd>Role: 2D Artist & 2D/3D Animator</dd>
+                    <dd>About: As the graphic design lead, I help to create some of the weekly graphics for the club while distributing the work to our amazing graphic design interns!</dd>
+            </div>
+            <div class="flexbox-item Tyler_Image">
+                <img src="officerimages/Tyler.png" alt="Tyler" width="256" height="200">
+            </div>
+            <div class="flexbox-item Tyler">
+                <h2>Tyler (Lead Web Coordinator)</h2>
+                    <dd>4th Year</dd>
+                    <dd>Role: Programmer & Artist</dd>
+                    <dd>About:</dd>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-1">
+            <div class="flexbox-item Hoang_Image">
+                <img src="officerimages/Hoang.JPG" alt="Hoang" width="256" height="200">
+            </div>
+            <div class="flexbox-item Hoang">
+                <h2>Hoang (Stream Coordinator)</h2>
+                    <dd>3rd Year</dd>
+                    <dd>Role: Programmer</dd>
+                    <dd>About:</dd>
+            </div>
+            <div class="flexbox-item Hannah_Image">
+                <img src="officerimages/Hannah.jpg" alt="Hannah" width="256" height="200">
+            </div>
+            <div class="flexbox-item Hannah">
+                <h2>Hannah (Media Producer)</h2>
+                    <dd>4th Year</dd>
+                    <dd>Role: Digital Media Artist</dd>
+                    <dd>About:</dd>
+            </div>
+    </section>
+
+        <!-- tr is number of rows -->
+
+            <!-- td is number of columns -->
+
+     <header-component></header-component>
+     <tr> 
+         <th>
+             <h1 style="color:white"> Design Assistants</h1>
+             <div style="color:#003e82">
+         </th>
+     </tr>
+    <section>
+        <div class="container-2">
+            <div class="flexbox-item Endlessette_Image"; id="Endlessette_Image">
+                <img src="officerimages/Endlessette.png" alt="Endlessette" width="256" height="200">
+            </div>
+            <div id="Endlessette">
+                <h2> Endlessette</h2>
+            </div>
+            <div class="flexbox-item Ben_Image"; id="Ben_Image">
+                <img src="officerimages/Ben.jpg" alt="Ben" width="256" height="200">
+            </div>
+            <div id="Ben">
+                <h2>Ben</h2>
+            </div>
+        </div>
+    </section>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="faq-title">
+            FAQ
+        </title>
+        <link rel="stylesheet"/>
+        <link rel="stylesheet" href="css/faq.css">
+    </head>
+
+    <div>
+        <h1 class="container-5">FAQ</h1>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+        <meta charset="UTF-8">
+    <div class="faq-section">
+        <h3>What is the Game Development Club?</h3>
+        <div class="pannel">
+            <p>The Game Development Club was founded to serve as an environment for people to learn about the process of developing games, to play and understand game design, and to collaborate with others in researching and creating their own games.</p>
+        </div>
+    </div>
+    </div>
+    <div class="faq-section">
+        <h3>What do we provide?</h3>
+        <div class="pannel">
+            <p>By providing tools, resources, and many forms of inspiration and motivation we help people learn about the game development process regardless of their level of experience. We also participate in game jams and reach out to industry professionals who can elaborate on their experiences and teach fundamental game making ideas to our club.</p>
+        </div>
+    </div>
+    <div class="faq-section">
+        <h3>Where do we meet?</h3>
+        <div class="pannel">
+            <p>We meet every Thursday at 7:00 PM at the MLK Library's Innovation Center, located on the Lower Level (the basement level) on our Discord Server. Everyone is welcome, even non-students!</p>
+        </div>
+    </div>
+    <div class="faq-section">
+        <h3>How do I get to the Lower Level?</h3>
+        <div class="panel">
+            <p>There are two ways to get to the Lower Level. You can take the elevator and hit the LL button, we’ll be to the right after exiting. You can also take the stairs next to the elevator and go down to the very bottom of the stairs. From there go through the doorway and turn right past the elevators. We’ll be immediately on your right when entering the Innovation Centre.</p>
+        </div>
+    </div>
+
+    <div class="container-3" style="background-color:white">
+        <div><h6>Don't see your question?</h6></div>
+        <div><h4>Feel free to contact us <a href="https://discord.gg/D43hrrHt" target="_blank" style="color: #39A9CB">here</a>!</h4></div>
+    </div>
+
+    <img id="right_corner" src= "officerimages/Blue Corner (Bottom Left).png">
+    <div>
+        <h1 class="container-6" style= "color: #191D88"> Contact Us</h1>
+        <div style="color:#003e82">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+        <meta charset="UTF-8">
+    </div>
+    <div>
+        <p class="container-4"style="color: #191D88" >You can reach us by coming to one of our meetings. Official club meetings are only held during the Fall semester (August-November) and Spring semester (January-May) of SJSU. We meet every Thursdays at 7:00pm in the MLK Library's Innovation Center which is located at the basement level. We are also very active on Discord, so you are welcome to join our server and message any of the current officers or the club advisor about any questions. If not Discord, try any of our other social media platforms.</p>
+    </div>
+    <img id="left_corner"  src="officerimages/Blue Corner (Bottom Left).png">
+    
+    <footer-component></footer-component>
+</body>
 </html>
