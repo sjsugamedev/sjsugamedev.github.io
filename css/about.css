@@ -113,27 +113,34 @@ body
 
 #left_middle_logo4
 {
+  position: absolute;
   width: 21%;
   transform: rotateX(200deg);
   margin-left: -10.7vw;
-  margin-top: -28vh;
+  margin-top: -25vh;
   opacity: 0.7;
+  z-index: -1;
 }
 
 #left_bottom_logo4
 {
+  position: absolute;
   width: 21%;
   transform: rotateX(220deg);
   margin-left: -5vw;
-  margin-top: 3rem;
+  margin-top: -15rem;
   opacity: 0.7;
+  z-index: -1;
 }
 
 #right_bottom_logo4
 {
+  position: absolute;
   width: 27%;
   margin-left: 71vw;
+  margin-top: -15rem;
   opacity: 0.7;
+  z-index: -1;
 }
 
 
