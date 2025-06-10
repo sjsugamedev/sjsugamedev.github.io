@@ -145,7 +145,7 @@ body
 
 .sub-title
 {
-  padding-left: 10%;
+  padding-left: 19%;
   padding-top: 1%;
 
   font-size: 1.563rem;
@@ -539,5 +539,9 @@ left: 50px;
   margin: 0 auto 1.5rem auto;
   text-align: center;
   list-style-position: inside;
+}
+
+.shift-right {
+  margin-left: 10vw;
 }
 
