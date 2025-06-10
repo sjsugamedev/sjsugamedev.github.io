@@ -30,7 +30,7 @@ body
   width: 100%;
   height: 28rem;
   box-shadow: 0rem 0.188rem 0.438rem #043162;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 
 /* "Events" title and assets */
@@ -40,10 +40,10 @@ body
   position: relative;
   margin-left: 22vw;
   margin-right: 22vw;
-  top: 8rem;
+  top: 12rem;
 
   border-radius: 5rem;
-  padding: 3rem;
+  padding: 1.5rem;
 
   font-size: 2.938rem;
   font-weight: 600;
@@ -79,12 +79,11 @@ body
 {
   padding-right: 20%;
   padding-left: 10%;
-  padding-top: 1%;
-
+  padding-top: 0;
+  margin-bottom: 4rem;
   font-size: 1.563rem;
   font-weight: 600;
   line-height: 3rem;
-  
   color: white;
 }
 
