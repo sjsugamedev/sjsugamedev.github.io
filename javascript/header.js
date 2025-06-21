@@ -30,7 +30,7 @@ headerTemplate.innerHTML =
 
   header
   {
-    background-color: rgba(0,0,0,0);
+    background-color: #043162;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,8 +184,8 @@ class Header extends HTMLElement
   
     connectedCallback()
     {
-      const shadowRoot = this.attachShadow({ mode: 'closed' });
-      shadowRoot.appendChild(headerTemplate.content);
+      const shadowRoot = this.attachShadow({ mode: 'open' });
+      shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
 
       const hamburger = shadowRoot.querySelector('.hamburger');
       const navLinks = shadowRoot.querySelector('.nav-links');

@@ -20,82 +20,6 @@ body
     );
 }
 
-/* header image */
-#header_image 
-{
-  background-image: url(../img/web_banner_big_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 32rem;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-}
-
-#header_text
-{
-  text-align: center;
-  position: relative;
-  margin-left: 23vw;
-  margin-right: 23vw;
-  top: 4rem;
-  margin-bottom: 14rem;
-
-  border-radius: 5rem;
-  padding: 4rem;
-  padding-bottom: 3rem;
-
-  font-size: 2.938rem;
-  font-weight: 600;
-  line-height: 2.6rem;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
-
-  color: white;
-
-  /* Gradient background */
-  background: linear-gradient(
-    90deg, /* Horizontal gradient */
-    rgb(48, 114, 200)0%, /* Darker shade on the left */
-    rgb(29, 42, 146) 100% /* Lighter shade on the right */
-  );
-
-  box-shadow: 0rem 0.188rem 0.438rem #043162
-}
-
-#header_text_description
-{
-  font-size: 1.563rem;
-}
-
-#itchlink
-{
-  text-align: center;
-  position: relative;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: -9.1rem;
-
-  border-radius: 5rem;
-  padding: 1rem;
-  padding-top: 0rem;
-
-  font-size: 1.8rem;
-
-  color: white;
-  background-color: #191d88f4;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-}
-
-#itchlink:hover {
-  transform: scale(1.08);
-}
-
-#itchlogo
-{
-  position: relative;
-  top: 1rem;
-}
-
 #left_corner
 {
   position: relative;
@@ -126,13 +50,21 @@ body
 }
 
 /* title and assets */
-.title 
-{
+.featured-title {
   text-align: center;
-  padding: 5%;
-  padding-bottom: 7%;
+  margin: 4rem 0;
+  position: relative;
+}
+
+.featured-title span {
+  display: inline-block;
+  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
+  padding: 1.5rem 6rem;
+  border-radius: 5rem;
   font-size: 2.938rem;
   color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .games

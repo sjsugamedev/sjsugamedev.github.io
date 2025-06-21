@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
   
   <script src="javascript/footer.js" type="text/javascript" defer></script>
   <script src="javascript/header.js" type="text/javascript" defer></script>
+  <script src="javascript/social-links.js" type="text/javascript" defer></script>
   <title>Game Dev Club</title>
 </head>
 
@@ -21,24 +23,13 @@
 
   <!--header image-->
   <div id="header_image">
-
-    <!--header text-->
-    <div id="header_text">
+    <div class="title">
       <strong>Welcome to <span style="color: #ffc436;">Game Dev!</span></strong>
       <div id="header_text_description">
         <br>Join us in shaping the future of interactive entertainment and cultivating a vibrant gaming community on campus.
       </div>
     </div>
-
-    <!--itch link-->
-    <div id="discord-link" >
-    <img id="discord-logo" src="assets/discordLogo.png">
-      <a href="https://discord.com/invite/FebnJ6k" target="_blank" style="color: white;">
-        <strong> 
-          Join Discord
-        </strong>
-      </a>
-    </div>
+    <social-links-component></social-links-component>
   </div>
 <!-- Main section -->
   <div class="main-section">

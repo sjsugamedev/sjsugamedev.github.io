@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/games.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 
   <script src="javascript/footer.js" type="text/javascript" defer></script>
   <script src="javascript/header.js" type="text/javascript" defer></script>
+  <script src="javascript/social-links.js" type="text/javascript" defer></script>
   <title>Games</title>
 </head>
 
@@ -21,32 +23,20 @@
 
   <!--header image-->
   <div id="header_image">
-
-    <!--header text-->
-    <div id="header_text">
+    <div class="title">
       <strong>Games from <span style="color: #ffc436;">Game Dev!</span></strong>
       <div id="header_text_description">
         <br>Check out the games from previous semesters through our itch.io page.
       </div>
     </div>
-
-    <!--itch link-->
-    <a href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game" target="_blank" style="text-decoration: none;">
-      <div id="itchlink" >
-        <img id="itchlogo" src="assets/itchlogo.svg" style="transform: scale(0.9);">
-          <strong style="color: white"> 
-            itch.io 
-          </strong>
-      </div>
-    </a>
-
+    <social-links-component></social-links-component>
   </div>  
 
   <!--page title and decor-->
-  <h1 class="title">
+  <h1 class="featured-title">
     <img id="left_corner" src="assets/featuredgames_corners.svg">
     <img id="mascot_left" src="assets/mascot_left.svg">
-    Featured Games
+    <span>Featured Games</span>
     <img id="right_corner" src="assets/featuredgames_corners.svg">
     <img id="mascot_right" src="assets/CatDownTransparent.png">
   </h1>
