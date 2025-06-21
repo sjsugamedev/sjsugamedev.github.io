@@ -78,8 +78,51 @@ headerTemplate.innerHTML =
     color: #face0d;
   }
 
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
 
-  /* may need to get rid of this: will target all buttons */
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px; /* Adjust as needed */
+      left: 0;
+      background-color: #003e82; /* Same as header or a suitable color */
+      text-align: center;
+      z-index: 1000; /* Ensures menu is on top */
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      padding: 15px 0;
+      display: block;
+      width: 100%;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .sjsu-game-dev {
+      display: none; /* Optionally hide the text logo on small screens */
+    }
+  }
 
   /* footer */
   footer
@@ -123,6 +166,11 @@ headerTemplate.innerHTML =
           <li> <a href="games.html">Games</a></li>
           <li> <a href="events.html">Events</a></li>
         </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </nav>
     </header>
 `;
@@ -138,6 +186,13 @@ class Header extends HTMLElement
     {
       const shadowRoot = this.attachShadow({ mode: 'closed' });
       shadowRoot.appendChild(headerTemplate.content);
+
+      const hamburger = shadowRoot.querySelector('.hamburger');
+      const navLinks = shadowRoot.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
     }
 }
   

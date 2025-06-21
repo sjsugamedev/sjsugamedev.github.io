@@ -542,6 +542,85 @@ left: 50px;
 }
 
 .shift-right {
-  margin-left: 10vw;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #header_image {
+    height: 12rem;
+    padding-top: 0;
+    background-position: center 30%;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1rem;
+    font-size: 1.5rem;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+
+  #event_description, #provide_description {
+    padding: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .sub-title, .sub-title-fixed {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  
+  .container {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  .images {
+    margin-right: 0;
+  }
+  
+  .text-content {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .container-1, .container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexbox-item {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .flexbox-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .faq-section {
+    padding: 0 1rem;
+  }
+
+  #left_middle_logo4, #left_bottom_logo4, #right_bottom_logo4 {
+      display: none;
+  }
 }
 
