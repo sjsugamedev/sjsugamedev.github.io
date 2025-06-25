@@ -162,7 +162,9 @@ headerTemplate.innerHTML =
       
       <nav>
         <ul class="nav-links">
-          <li> <a href="about.html">About</a></li>
+          
+          <li> <a href="summer2025.html">SUMMER EVENT</a></li>
+          <li> <a href="index.html">About</a></li>
           <li> <a href="games.html">Games</a></li>
           <li> <a href="events.html">Events</a></li>
         </ul>
