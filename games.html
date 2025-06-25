@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/games.css" type="text/css">
+  <link rel="stylesheet" href="css/header.css" type="text/css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 
   <script src="javascript/footer.js" type="text/javascript" defer></script>
   <script src="javascript/header.js" type="text/javascript" defer></script>
+  <script src="javascript/social-links.js" type="text/javascript" defer></script>
   <title>Games</title>
 </head>
 
@@ -21,160 +23,35 @@
 
   <!--header image-->
   <div id="header_image">
-
-    <!--header text-->
-    <div id="header_text">
+    <div class="title">
       <strong>Games from <span style="color: #ffc436;">Game Dev!</span></strong>
       <div id="header_text_description">
         <br>Check out the games from previous semesters through our itch.io page.
       </div>
     </div>
-
-    <!--itch link-->
-    <a href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game" target="_blank" style="text-decoration: none;">
-      <div id="itchlink" >
-        <img id="itchlogo" src="assets/itchlogo.svg" style="transform: scale(0.9);">
-          <strong style="color: white"> 
-            itch.io 
-          </strong>
-      </div>
-    </a>
-
+    <social-links-component></social-links-component>
   </div>  
 
   <!--page title and decor-->
-  <h1 class="title">
+  <h1 class="featured-title">
     <img id="left_corner" src="assets/featuredgames_corners.svg">
     <img id="mascot_left" src="assets/mascot_left.svg">
-    Featured Games
+    <span>Featured Games</span>
     <img id="right_corner" src="assets/featuredgames_corners.svg">
     <img id="mascot_right" src="assets/CatDownTransparent.png">
   </h1>
 
   <div class="games">
-
-    <div id="odd" style="background-color: #191D88;">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3126162" target="_blank">
-        <div id="gametitle">
-          Escape from Truth Seeker Manor
-        </div>
-
-        <img id="gameelt" src="assets/truthseeker.png" style="border: 0.7rem solid #FFC436">
-
-        <div id="gamedescription">
-          You wake up in an abandoned retro-wave mansion and must escape! The 
-          Eccentric Conspiracist owns the mansion, and hides clues to escape 
-          the room in his conspiracy documents and items in the room.
-        </div>
-      </a>
-    </div>
-
-    <div id="even" style="background-color: #004f88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3145387" target="_blank">
-          <div id="gametitle">
-            GoCones
-          </div>
-
-          <img id="gameelt" src="assets/gocones.png" style="border: 0.7rem solid #39A9CB">
-
-          <div id="gamedescription">
-            An ice cream truck simulator - drive your ice cream truck around an 
-            infinitely generating city, sell ice cream and get rich! Maybe without 
-            running over all your customers...
-          </div>
-       </a>
-    </div>
-
-    <div id="odd" style="background-color: #191D88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3159282" target="_blank">
-        <div id="gametitle">
-          Midnight Express
-        </div>
-        
-        <img id="gameelt" src="assets/midnightexpress.png" style="border: 0.7rem solid #FFC436">
-
-        <div id="gamedescription">
-          Fight your way off this Midnight Express against robotic enemies in this noir styled shoot 
-          'em up! All your moves are tied to your battery, but luckily these robots 
-          use the perfect thing to charge it. Time your moves just right to gain the 
-          extra energy you need to keep going. 
-        </div>
-      </a>
-    </div>
-
-    <div id="even" style="background-color: #004f88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/2974118" target="_blank">
-        <div id="gametitle">
-          Sea of Storms
-        </div>        
-        
-        <img id="gameelt" src="assets/seaofstorms.png" style="border: 0.7rem solid #39A9CB">
-        
-        <div id="gamedescription">
-          During your usual shipping trip, a hurricane brings you and your crew to 
-          the dreaded Sea of Storms! Try to survive by keeping your resources intact,
-          and by finding a way out!
-        </div>
-      </a>
-    </div>
-
-    <div id="odd" style="background-color: #191D88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3130220" target="_blank">
-        <div id="gametitle">
-          Iris
-        </div>
-
-        <img id="gameelt" src="assets/iris.png" style="border: 0.7rem solid #FFC436">
-
-        <div id="gamedescription">
-          A short puzzle game about a young girl named Iris.
-        </div>
-      </a>
-    </div>
-
-    <div id="even" style="background-color: #004f88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3124323" target="_blank">
-        <div id="gametitle">
-          Weekend at the Beach
-        </div>
-
-        <img id="gameelt" src="assets/atthebeach.png" style="border: 0.7rem solid #39A9CB">
-
-        <div id="gamedescription">
-          Local multiplayer fighting game where you fight your friends... with fish!
-        </div>
-      </a>
-    </div>
-
-    <div id="odd" style="background-color: #191D88;">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3159731" target="_blank">
-        <div id="gametitle">
-          Crow
-        </div>
-
-        <img id="gameelt" src="assets/crow.png" style="border: 0.7rem solid #FFC436">
-
-        <div id="gamedescription">
-          You are a crow that must survive and protect your nest by foraging for sticks and seeds and defending 
-          the nest and yourself from ants and vultures.
-        </div>
-      </a>
-    </div>
-
-    <div id="even" style="background-color: #004f88">
-      <a id="gamelink" href="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3155285" target="_blank"> 
-        <div id="gametitle">
-          CAT OUTTA HERE!
-        </div>
-
-        <img id="gameelt" src="assets/catgame.png" style="border: 0.7rem solid #39A9CB">
-
-        <div id="gamedescription">
-          Super scuffed 2 player local multiplayer game where you see how long you can last dodging obstacles.
-        </div>
-      
-    </a>
-    </div>
+    <!-- To add a new game, copy the line below and paste in the game URL -->
+    <div class="game-embed-placeholder" data-url="https://lectroblob.itch.io/seniordiscount"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3126162"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3145387"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3159282"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/2974118"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3130220"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3124323"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3159731"></div>
+    <div class="game-embed-placeholder" data-url="https://itch.io/jam/2024-final-fall-semester-showcase-sjsu-game/rate/3155285"></div>
   </div>
 
   <!--padding for bottom-->
@@ -182,6 +59,70 @@
 
   <!--footer-->
   <footer-component></footer-component>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const placeholders = document.querySelectorAll('.game-embed-placeholder');
+      for (const placeholder of placeholders) {
+        await createEmbed(placeholder);
+        await new Promise(resolve => setTimeout(resolve, 300)); // Add a delay between requests
+      }
+    });
+
+    async function createEmbed(placeholder) {
+      const url = placeholder.dataset.url;
+      if (!url) {
+        placeholder.innerHTML = '<p>No URL provided.</p>';
+        return;
+      }
+
+      placeholder.innerHTML = '<p>Loading...</p>';
+
+      try {
+        const response = await fetch(`https://api.microlink.io?url=${encodeURIComponent(url)}`);
+        const data = await response.json();
+
+        if (data.status === 'success' && data.data.title) {
+          const info = data.data;
+          const imageUrl = info.image?.url || info.logo?.url || '';
+          
+          let gameTitle = info.title;
+          let authorInfo = '';
+
+          if (info.url.includes('itch.io')) {
+            const bySplit = info.title.split(' by ');
+            if (bySplit.length > 1) {
+              gameTitle = bySplit[0];
+              authorInfo = `by ${bySplit.slice(1).join(' by ')}`;
+            }
+          } else if (info.url.includes('steampowered.com')) {
+            gameTitle = info.title.replace(/ on Steam$/, '');
+          }
+
+          const embedHTML = `
+            <div class="game-embed-card">
+              <a href="${info.url}" target="_blank" rel="noopener noreferrer">
+                ${imageUrl ? `<img src="${imageUrl}" alt="${gameTitle}">` : ''}
+                <div class="game-embed-info">
+                  <h4>${gameTitle}</h4>
+                  ${authorInfo ? `<p class="game-author-info">${authorInfo}</p>` : ''}
+                  <p>${info.description || ''}</p>
+                  <span>${info.publisher || new URL(info.url).hostname}</span>
+                </div>
+              </a>
+            </div>
+          `;
+          placeholder.innerHTML = embedHTML;
+        } else {
+          console.log('Microlink API response:', data);
+          placeholder.innerHTML = '<p>Could not fetch preview. Please check the URL.</p>';
+        }
+      } catch (error) {
+        console.error('Error fetching game data:', error);
+        placeholder.innerHTML = '<p>An error occurred while fetching the preview.</p>';
+      }
+    }
+  </script>
 
 </body>
 </html>

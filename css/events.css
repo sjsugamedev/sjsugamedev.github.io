@@ -20,48 +20,6 @@ body
     );
 }
 
-/* header image */
-#header_image 
-{
-  background-image: url(../img/web_banner_big_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 28rem;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-  margin-bottom: 10rem;
-}
-
-/* "Events" title and assets */
-.title 
-{
-  text-align: center;
-  position: relative;
-  margin-left: 22vw;
-  margin-right: 22vw;
-  top: 8rem;
-
-  border-radius: 5rem;
-  padding: 3rem;
-
-  font-size: 2.938rem;
-  font-weight: 600;
-  line-height: 2.1rem;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
-
-  color: white;
-
-  /* Gradient background */
-  background: linear-gradient(
-    90deg, /* Horizontal gradient */
-    rgb(48, 114, 200)0%, /* Darker shade on the left */
-    rgb(29, 42, 146) 100% /* Lighter shade on the right */
-  );
-
-  box-shadow: 0rem 0.188rem 0.438rem #043162
-}
-
 /* Event name */
 #event_name 
 {
@@ -129,6 +87,178 @@ body
   margin-top: -8rem;
   width: 60vw;
   height: 50vw;
+}
+
+.event-container {
+    padding: 0 2rem;
+}
+
+.event-card {
+    display: flex;
+    gap: 2rem;
+    background-color: #1a5f9e; /* A blue that fits the theme */
+    border-radius: 30px;
+    margin: 4rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.event-text {
+    flex: 3; /* Give more space to text */
+}
+
+.event-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    line-height: 1.2;
+}
+
+.event-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-text .highlight {
+    color: #F6BF26; /* yellow from image */
+    font-weight: 700;
+}
+
+.event-links {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.event-links .col {
+    flex: 1;
+}
+
+.event-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.event-links a:hover {
+    text-decoration: underline;
+}
+
+.event-image {
+    flex: 2; /* A bit less space than text */
+    background-color: transparent;
+    border-radius: 20px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .title {
+        max-width: 90%;
+        padding: 1.5rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    .social-links-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #header_image {
+        height: 12rem; /* Reduced height for a smaller header */
+        padding-top: 0;
+        background-position: center 30%; /* Adjust background position */
+        margin-bottom: 2rem;
+        box-shadow: 0rem 0.188rem 0.438rem #043162;
+    }
+
+    .title > div {
+        font-size: 1rem !important; /* Further reduced font size */
+    }
+
+    .event-card {
+        flex-direction: column;
+        padding: 1.2rem;
+        margin: 1.2rem auto;
+        border-radius: 20px;
+    }
+
+    .event-text h2 {
+        font-size: 1.5rem; /* Further reduced font size */
+    }
+
+    .event-text p {
+        font-size: 0.9rem; /* Further reduced font size */
+        line-height: 1.4;
+    }
+    
+    .event-text .highlight {
+        font-size: 1rem; /* Further reduced font size */
+    }
+
+    .event-links {
+        flex-direction: column;
+    }
+    
+    .event-links .col {
+        margin-bottom: 1rem;
+    }
+
+    .event-image {
+        min-height: 250px;
+    }
+
+    .calendar iframe {
+        width: 90vw;
+        height: 100vw;
+    }
+
+    #left_middle_logo4,
+    #left_bottom_logo4,
+    #right_bottom_logo4 {
+        display: none;
+    }
 }
 
 

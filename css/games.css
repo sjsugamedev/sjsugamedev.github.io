@@ -20,82 +20,6 @@ body
     );
 }
 
-/* header image */
-#header_image 
-{
-  background-image: url(../img/web_banner_big_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 32rem;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-}
-
-#header_text
-{
-  text-align: center;
-  position: relative;
-  margin-left: 23vw;
-  margin-right: 23vw;
-  top: 4rem;
-  margin-bottom: 14rem;
-
-  border-radius: 5rem;
-  padding: 4rem;
-  padding-bottom: 3rem;
-
-  font-size: 2.938rem;
-  font-weight: 600;
-  line-height: 2.6rem;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
-
-  color: white;
-
-  /* Gradient background */
-  background: linear-gradient(
-    90deg, /* Horizontal gradient */
-    rgb(48, 114, 200)0%, /* Darker shade on the left */
-    rgb(29, 42, 146) 100% /* Lighter shade on the right */
-  );
-
-  box-shadow: 0rem 0.188rem 0.438rem #043162
-}
-
-#header_text_description
-{
-  font-size: 1.563rem;
-}
-
-#itchlink
-{
-  text-align: center;
-  position: relative;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: -9.1rem;
-
-  border-radius: 5rem;
-  padding: 1rem;
-  padding-top: 0rem;
-
-  font-size: 1.8rem;
-
-  color: white;
-  background-color: #191d88f4;
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-}
-
-#itchlink:hover {
-  transform: scale(1.08);
-}
-
-#itchlogo
-{
-  position: relative;
-  top: 1rem;
-}
-
 #left_corner
 {
   position: relative;
@@ -126,13 +50,21 @@ body
 }
 
 /* title and assets */
-.title 
-{
+.featured-title {
   text-align: center;
-  padding: 5%;
-  padding-bottom: 7%;
+  margin: 4rem 0;
+  position: relative;
+}
+
+.featured-title span {
+  display: inline-block;
+  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
+  padding: 1.5rem 6rem;
+  border-radius: 5rem;
   font-size: 2.938rem;
   color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .games
@@ -152,7 +84,8 @@ body
 }
 
 .games > div:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 #odd:hover {
@@ -167,7 +100,7 @@ body
   text-decoration: none;
   color: white;
   display: inline-block;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -189,7 +122,169 @@ body
 #gamedescription {
   position: relative;
   margin: auto;
-  font-size: 1.063rem;
-  line-height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
   width: 21rem;
+}
+
+@media screen and (max-width: 768px) {
+  #header_image {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  #header_text {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    top: 2rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  #header_text_description {
+    font-size: 1rem;
+  }
+  
+  #itchlink {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: -2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+  }
+
+  #left_corner, #mascot_left, #right_corner, #mascot_right {
+    display: none;
+  }
+
+  .games > div {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    padding-bottom: 2rem;
+  }
+
+  #gameelt {
+    width: 80%;
+  }
+
+  #gametitle {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  
+  #gamedescription {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* Itch.io Embedder Styles */
+.game-embed-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #004f88;
+  border-radius: 20px;
+  color: white;
+}
+
+.game-embed-form h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.game-embed-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.game-embed-form button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffc436;
+  color: #191d88;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-embed-form button:hover {
+  background-color: #ffda73;
+}
+
+#game-embed-output {
+  margin-top: 1.5rem;
+}
+
+.game-embed-card {
+  background-color: #004f88;
+  border-radius: 20px;
+  overflow: hidden;
+  border-left: 5px solid #ffc436;
+  text-align: left;
+  height: 75%;
+}
+
+.game-embed-card a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.game-embed-card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.game-embed-info {
+  padding: 1rem;
+}
+
+.game-embed-info h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.game-author-info {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.game-embed-info p {
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  opacity: 0.8;
+}
+
+.game-embed-info span {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.game-embed-placeholder {
+  color: white;
+  width: 320px;
+  margin: 1.5rem;
+  text-align: center;
 }

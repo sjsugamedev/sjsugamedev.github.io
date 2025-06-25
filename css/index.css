@@ -20,93 +20,6 @@ body
     );
 }
 
-/* header image */
-#header_image 
-{
-  background-image: url(../img/web_banner_big_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; /* Horizontal: 50% (center), Vertical: 20% (closer to the top) */
-  width: 100%;
-  min-height: 60rem;
-  box-shadow: 0rem 0.188rem 0.438rem #000000;
-  position: relative; /* Ensure proper stacking context */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow for visibility */
-  z-index: 1; /* Ensure shadow is above other elements */
-}
-
-#header_text
-{
-  text-align: center;
-  position: relative;
-  margin-left: 23vw;
-  margin-right: 23vw;
-  top: 15rem;
-  margin-bottom: 14rem;
-
-  border-radius: 5rem;
-  padding: 4rem;
-
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
-
-  font-size: 3.2rem;
-  font-weight: 700;
-
-  color: white;
-
-  /* Gradient background */
-  background: linear-gradient(
-    90deg, /* Horizontal gradient */
-    rgb(48, 114, 200)0%, /* Darker shade on the left */
-    rgb(29, 42, 146) 100% /* Lighter shade on the right */
-  );
-
-  box-shadow: 0rem 0.188rem 0.438rem #000000
-}
-
-#header_text_description
-{
-  font-size: 1.8rem;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#discord-link
-{
-  text-align: center;
-  position: relative;
-  margin-left: 40%;
-  margin-right: 40%;
-  margin-top: 20rem;
-
-  border-radius: 5rem;
-  padding: 1rem;
-  padding-top: 0rem;
-
-  font-size: 1.8rem;
-  font-weight: 900;
-
-  color: white;
-  background-color: rgb(25, 29, 136);
-  box-shadow: 0rem 0.188rem 0.438rem #043162;
-}
-
-#discord-link:hover {
-  transform: scale(1.08);
-  text-decoration: underline;
-}
-
-#discord-logo
-{
-  position: relative;
-  top: 1rem;
-  left: -0.5rem;
-
-  width: 20%;
-  height: auto;
-}
-
-
 .main-section {
   display: flex;
   flex-direction: column;
@@ -121,19 +34,6 @@ body
     );
 
   color: white;
-}
-
-.title
-{
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle blur shadow */
-
-  font-size: 3.2rem;
-  font-weight: 700;
-
-  color: white;  
 }
 
 .sub-title,

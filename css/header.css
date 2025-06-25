@@ -1,0 +1,123 @@
+/* header image */
+#header_image {
+  background-image: url(../img/web_banner_big_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+/* Page Title in Header */
+.title {
+  text-align: center;
+  margin: 0;
+  border-radius: 5rem;
+  padding: 1.5rem 4rem;
+  font-size: 2.938rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
+  box-shadow: 0rem 0.188rem 0.438rem #043162;
+  min-width: 500px;
+}
+
+/* Sub-description for title on index.html */
+#header_text_description {
+    font-size: 1.563rem;
+}
+
+/* Discord button in header */
+.discord-header-button {
+  display: flex;
+  align-items: center;
+  background-color: #7B8AEC;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.discord-header-button:hover {
+  transform: scale(1.05);
+}
+
+.discord-header-button img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.discord-button-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.discord-button-text span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.discord-button-text strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+/* Social media icons in header */
+.social-links-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-links-header a {
+  text-shadow: none;
+}
+
+.social-links-header img {
+  width: 50px;
+  transition: transform 0.2s;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.social-links-header img:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  #header_image {
+    padding: 2rem 1rem;
+    background-position: center 30%;
+  }
+
+  .title {
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  #header_text_description {
+    font-size: 1rem;
+  }
+
+  .social-links-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+} 
