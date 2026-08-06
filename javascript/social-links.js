@@ -4,7 +4,7 @@ socialLinksTemplate.innerHTML = `
     <div class="social-links-header">
       <a href="https://www.instagram.com/sjsugamedev/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/instagram.png" alt="Instagram"></a>
       <a href="https://www.linkedin.com/company/sjsugamedev/" target="_blank" rel="noopener noreferrer"><img src="img/social-media/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://discord.gg/xGv8qYA" target="_blank" rel="noopener noreferrer" class="discord-header-button">
+      <a href="https://discord.gg/vSmFaC5MkX" target="_blank" rel="noopener noreferrer" class="discord-header-button">
           <img src="img/social-media/discord.png" alt="Discord Logo">
           <div class="discord-button-text">
               <span>JOIN THE</span>
