@@ -74,57 +74,68 @@ body
   justify-content: center;
 }
 
-.games > div {
+.game-card {
+  display: flex;
+  flex-direction: column;
   width: 25rem;
-  height: 42rem;
+  min-height: 27rem;
   margin: 1.5rem;
-  border-radius: 4rem;
-  text-align: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #075a96 0%, #003e82 100%);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 24, 70, 0.3);
   color: white;
-}
-
-.games > div:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-#odd:hover {
-  background: linear-gradient(180deg,rgba(0, 63, 130, 0) 30%, rgb(43, 119, 206) 93%);
-}
-
-#even:hover {
-  background: linear-gradient(180deg,rgba(0, 63, 130, 0) 30%, rgb(44, 157, 206) 93%);
-}
-
-#gamelink {
   text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.game-card:hover {
+  transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0 1.25rem 2rem rgba(0, 24, 70, 0.42);
+}
+
+.game-card:focus-visible {
+  outline: 0.25rem solid #ffc436;
+  outline-offset: 0.25rem;
+}
+
+.game-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 315 / 250;
+  object-fit: cover;
+  background: #004f88;
+}
+
+.game-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem 1.5rem;
+  text-align: left;
+}
+
+.game-card-content h2 {
+  margin-bottom: 0.65rem;
   color: white;
-  display: inline-block;
-  width: 90%;
-  height: 100%;
+  font-size: 1.35rem;
+  line-height: 1.25;
 }
 
-#gameelt {
-  border-radius: 3rem;
-  margin-bottom: 1rem;
-  margin-top: 1.3rem;
+.game-card-content p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
 
-#gametitle {
-  position: relative;
-  padding-top: 1.5rem;
-  font-size: 1.563rem;
-  font-weight: 600;
-  width: 20rem;
-  margin: auto;
-}
-
-#gamedescription {
-  position: relative;
-  margin: auto;
+.game-card-link {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  color: #ffc436;
   font-size: 0.9rem;
-  line-height: 1.5rem;
-  width: 21rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -164,127 +175,9 @@ body
     display: none;
   }
 
-  .games > div {
-    width: 90%;
+  .game-card {
+    width: min(90%, 25rem);
     height: auto;
     margin: 1rem auto;
-    padding-bottom: 2rem;
   }
-
-  #gameelt {
-    width: 80%;
-  }
-
-  #gametitle {
-    width: 90%;
-    font-size: 1.2rem;
-  }
-  
-  #gamedescription {
-    width: 90%;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-  }
-}
-
-/* Itch.io Embedder Styles */
-.game-embed-container {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background-color: #004f88;
-  border-radius: 20px;
-  color: white;
-}
-
-.game-embed-form h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.game-embed-form input {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  border: none;
-  font-size: 1rem;
-}
-
-.game-embed-form button {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 10px;
-  border: none;
-  background-color: #ffc436;
-  color: #191d88;
-  font-size: 1.1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.game-embed-form button:hover {
-  background-color: #ffda73;
-}
-
-#game-embed-output {
-  margin-top: 1.5rem;
-}
-
-.game-embed-card {
-  background-color: #004f88;
-  border-radius: 20px;
-  overflow: hidden;
-  border-left: 5px solid #ffc436;
-  text-align: left;
-  height: 75%;
-}
-
-.game-embed-card a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.game-embed-card img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-.game-embed-info {
-  padding: 1rem;
-}
-
-.game-embed-info h4 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.game-author-info {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-top: -0.25rem;
-  margin-bottom: 0.75rem;
-}
-
-.game-embed-info p {
-  font-size: 0.9rem;
-  margin: 0 0 0.5rem 0;
-  opacity: 0.8;
-}
-
-.game-embed-info span {
-  font-size: 0.8rem;
-  opacity: 0.6;
-}
-
-.game-embed-placeholder {
-  color: white;
-  width: 320px;
-  margin: 1.5rem;
-  text-align: center;
 }
