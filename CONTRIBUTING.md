@@ -7,10 +7,12 @@
 
 ```mermaid
 flowchart LR
-    A[Open an issue] --> B[Create branch]
+    A[Open issue] --> B[Create branch]
     B --> C[Commit changes]
     C --> D[Open PR]
-    D --> E[Merge into main]
+    D --> H[Assign reviewer]
+    H --> |Changes requested| C
+    H --> |Approved| E[Merge into main]
     E --> F[Delete branch]
     E --> G[GitHub auto-deploys]
 ```
