@@ -1,14 +1,12 @@
 /* reset global margins and padding */
-* 
-{ 
+* {
   font-family: "Poppins";
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /* applies to all elements on page */
-body 
-{
+body {
   height: auto;
   margin: auto;
   background: linear-gradient(
@@ -17,31 +15,27 @@ body
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-    );
+  );
 }
 
-#left_corner
-{
+#left_corner {
   position: relative;
   margin-bottom: -4rem;
   margin-right: 1.6rem;
 }
 
-#mascot_left
-{
+#mascot_left {
   position: relative;
   margin-left: -12.2rem;
   margin-bottom: -1rem;
 }
 
-#right_corner
-{
+#right_corner {
   transform: scaleY(-1) scaleX(-1);
   margin-bottom: 1.5rem;
 }
 
-#mascot_right
-{
+#mascot_right {
   transform: scale(0.5);
   position: relative;
   margin-left: -11.9rem;
@@ -58,17 +52,20 @@ body
 
 .featured-title span {
   display: inline-block;
-  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(48, 114, 200) 0%,
+    rgb(29, 42, 146) 100%
+  );
   padding: 1.5rem 6rem;
   border-radius: 5rem;
   font-size: 2.938rem;
   color: white;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.games
-{
+.games {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -87,7 +84,9 @@ body
   box-shadow: 0 0.75rem 1.5rem rgba(0, 24, 70, 0.3);
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
 
 .game-card:hover {
@@ -157,7 +156,7 @@ body
   #header_text_description {
     font-size: 1rem;
   }
-  
+
   #itchlink {
     margin-left: 20%;
     margin-right: 20%;
@@ -171,7 +170,10 @@ body
     padding-bottom: 3rem;
   }
 
-  #left_corner, #mascot_left, #right_corner, #mascot_right {
+  #left_corner,
+  #mascot_left,
+  #right_corner,
+  #mascot_right {
     display: none;
   }
 

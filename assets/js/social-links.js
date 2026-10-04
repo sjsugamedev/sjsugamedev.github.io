@@ -1,4 +1,4 @@
-const socialLinksTemplate = document.createElement('template');
+const socialLinksTemplate = document.createElement("template");
 
 socialLinksTemplate.innerHTML = `
     <div class="social-links-header">
@@ -17,13 +17,13 @@ socialLinksTemplate.innerHTML = `
 `;
 
 class SocialLinks extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.appendChild(socialLinksTemplate.content.cloneNode(true));
-    }
+  connectedCallback() {
+    this.appendChild(socialLinksTemplate.content.cloneNode(true));
+  }
 }
 
-customElements.define('social-links-component', SocialLinks); 
+customElements.define("social-links-component", SocialLinks);

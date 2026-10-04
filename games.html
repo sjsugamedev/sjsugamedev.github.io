@@ -1,117 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/games.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/header.css" type="text/css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/games.css" type="text/css">
-  <link rel="stylesheet" href="assets/css/header.css" type="text/css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <script src="assets/js/footer.js" type="text/javascript" defer></script>
-  <script src="assets/js/header.js" type="text/javascript" defer></script>
-  <script src="assets/js/social-links.js" type="text/javascript" defer></script>
-  <title>Games</title>
-</head>
+    <script src="assets/js/footer.js" type="text/javascript" defer></script>
+    <script src="assets/js/header.js" type="text/javascript" defer></script>
+    <script
+      src="assets/js/social-links.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <title>Games</title>
+  </head>
 
-<body>
-  <!--navbar & logo-->
-  <header-component></header-component>
+  <body>
+    <!--navbar & logo-->
+    <header-component></header-component>
 
-  <!--header image-->
-  <div id="header_image">
-    <div class="title">
-      <strong>Games from <span style="color: #ffc436;">Game Dev!</span></strong>
-      <div id="header_text_description">
-        <br>Check out the games from previous semesters through our itch.io page.
+    <!--header image-->
+    <div id="header_image">
+      <div class="title">
+        <strong
+          >Games from <span style="color: #ffc436">Game Dev!</span></strong
+        >
+        <div id="header_text_description">
+          <br />Check out the games from previous semesters through our itch.io
+          page.
+        </div>
       </div>
+      <social-links-component></social-links-component>
     </div>
-    <social-links-component></social-links-component>
-  </div>  
 
-  <!--page title and decor-->
-  <h1 class="featured-title">
-    <img id="left_corner" src="assets/featuredgames_corners.svg">
-    <img id="mascot_left" src="assets/mascot_left.svg">
-    <span>Featured Games</span>
-    <img id="right_corner" src="assets/featuredgames_corners.svg">
-    <img id="mascot_right" src="assets/CatDownTransparent.png">
-  </h1>
+    <!--page title and decor-->
+    <h1 class="featured-title">
+      <img id="left_corner" src="assets/featuredgames_corners.svg" />
+      <img id="mascot_left" src="assets/mascot_left.svg" />
+      <span>Featured Games</span>
+      <img id="right_corner" src="assets/featuredgames_corners.svg" />
+      <img id="mascot_right" src="assets/CatDownTransparent.png" />
+    </h1>
 
-  <div class="games">
-    <!-- Add new games by copying a card and replacing its link, thumbnail, title, and description. -->
-    <a class="game-card" href="https://caustic-kat.itch.io/al-lecartes-midnight-snack" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI3MTM4NzQwLnBuZw==/original/T1t18W.png" alt="Al LeCarte's Midnight Snack thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>Al LeCarte's Midnight Snack</h2>
-        <p>A vampiric 2D puzzle-platformer.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+    <div class="games">
+      <!-- Add new games by copying a card and replacing its link, thumbnail, title, and description. -->
+      <a
+        class="game-card"
+        href="https://caustic-kat.itch.io/al-lecartes-midnight-snack"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI3MTM4NzQwLnBuZw==/original/T1t18W.png"
+          alt="Al LeCarte's Midnight Snack thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>Al LeCarte's Midnight Snack</h2>
+          <p>A vampiric 2D puzzle-platformer.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://paracosms.itch.io/offbeat" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI3MTI2NTYxLmpwZw==/original/J9Ofh0.jpg" alt="OFFBEAT! thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>OFFBEAT!</h2>
-        <p>A game about a musical wizard and his overworked apprentice.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+      <a
+        class="game-card"
+        href="https://paracosms.itch.io/offbeat"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI3MTI2NTYxLmpwZw==/original/J9Ofh0.jpg"
+          alt="OFFBEAT! thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>OFFBEAT!</h2>
+          <p>A game about a musical wizard and his overworked apprentice.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://paracosms.itch.io/spartanguessr" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI3MTE4ODMzLnBuZw==/original/KljJ91.png" alt="SpartanGuessr thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>SpartanGuessr</h2>
-        <p>GeoGuessr, but for SJSU!</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+      <a
+        class="game-card"
+        href="https://paracosms.itch.io/spartanguessr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI3MTE4ODMzLnBuZw==/original/KljJ91.png"
+          alt="SpartanGuessr thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>SpartanGuessr</h2>
+          <p>GeoGuessr, but for SJSU!</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://tr-crzs.itch.io/rise" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI2MzQ5MDQ5LnBuZw==/original/Hwrozz.png" alt="Rise of the Olympian thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>Rise of the Olympian</h2>
-        <p>Explore the game on itch.io.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+      <a
+        class="game-card"
+        href="https://tr-crzs.itch.io/rise"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI2MzQ5MDQ5LnBuZw==/original/Hwrozz.png"
+          alt="Rise of the Olympian thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>Rise of the Olympian</h2>
+          <p>Explore the game on itch.io.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://a-fam.itch.io/gamblers-arena" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI2MzE1ODMyLnBuZw==/original/%2BOtwXu.png" alt="Gamblers' Arena thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>Gamblers' Arena</h2>
-        <p>Lucky Party Brawler.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+      <a
+        class="game-card"
+        href="https://a-fam.itch.io/gamblers-arena"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI2MzE1ODMyLnBuZw==/original/%2BOtwXu.png"
+          alt="Gamblers' Arena thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>Gamblers' Arena</h2>
+          <p>Lucky Party Brawler.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://verynoname.itch.io/data-dredger" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI4NzQ5NTE3LmpwZw==/original/41fj%2FC.jpg" alt="Data Dredger thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>Data Dredger</h2>
-        <p>Explore the game on itch.io.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
+      <a
+        class="game-card"
+        href="https://verynoname.itch.io/data-dredger"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI4NzQ5NTE3LmpwZw==/original/41fj%2FC.jpg"
+          alt="Data Dredger thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>Data Dredger</h2>
+          <p>Explore the game on itch.io.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
 
-    <a class="game-card" href="https://josepvalls.itch.io/scratch-disk" target="_blank" rel="noopener noreferrer">
-      <img class="game-card-image" src="https://img.itch.zone/aW1nLzI4Njg3OTY1LnBuZw==/original/nuIi1h.png" alt="Scratch Dis-K7 thumbnail" loading="lazy" decoding="async" referrerpolicy="no-referrer">
-      <div class="game-card-content">
-        <h2>Scratch Dis-K7</h2>
-        <p>Explore the game on itch.io.</p>
-        <span class="game-card-link">View game on itch.io&nbsp;↗</span>
-      </div>
-    </a>
-  </div>
+      <a
+        class="game-card"
+        href="https://josepvalls.itch.io/scratch-disk"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="game-card-image"
+          src="https://img.itch.zone/aW1nLzI4Njg3OTY1LnBuZw==/original/nuIi1h.png"
+          alt="Scratch Dis-K7 thumbnail"
+          loading="lazy"
+          decoding="async"
+          referrerpolicy="no-referrer"
+        />
+        <div class="game-card-content">
+          <h2>Scratch Dis-K7</h2>
+          <p>Explore the game on itch.io.</p>
+          <span class="game-card-link">View game on itch.io&nbsp;↗</span>
+        </div>
+      </a>
+    </div>
 
-  <!--padding for bottom-->
-  <div style="margin-bottom: 30rem;"></div>
+    <!--padding for bottom-->
+    <div style="margin-bottom: 30rem"></div>
 
-  <!--footer-->
-  <footer-component></footer-component>
-
-</body>
+    <!--footer-->
+    <footer-component></footer-component>
+  </body>
 </html>

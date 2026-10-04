@@ -1,4 +1,4 @@
-const footerTemplate = document.createElement('template');
+const footerTemplate = document.createElement("template");
 
 footerTemplate.innerHTML = `
   <style>
@@ -136,10 +136,10 @@ class Footer extends HTMLElement {
   }
 
   connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'closed' });
+    const shadowRoot = this.attachShadow({ mode: "closed" });
 
     shadowRoot.appendChild(footerTemplate.content);
   }
 }
 
-customElements.define('footer-component', Footer);
+customElements.define("footer-component", Footer);

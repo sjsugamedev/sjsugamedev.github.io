@@ -1,14 +1,12 @@
 /* reset global margins and padding */
-* 
-{ 
+* {
   font-family: "Poppins";
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /* applies to all elements on page */
-body 
-{
+body {
   height: auto;
   margin: auto;
   background: linear-gradient(
@@ -17,44 +15,40 @@ body
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-    );
+  );
 }
 
 /* Event name */
-#event_name 
-{
+#event_name {
   padding: 10%;
   padding-bottom: 1rem;
   padding-top: 0rem;
-  
+
   line-height: 6.25rem;
   font-size: 2.938rem;
-  color: #ffc436;;
+  color: #ffc436;
 }
 
 /* Event description */
-#event_description 
-{
+#event_description {
   padding: 10%;
   padding-top: 1%;
 
   font-size: 1.563rem;
   font-weight: 600;
   line-height: 3rem;
-  
+
   color: white;
 }
 
 /* Event date */
-#event_date 
-{
+#event_date {
   color: white;
 }
 
 /* background logo assets */
 
-#left_middle_logo4
-{
+#left_middle_logo4 {
   width: 21%;
   transform: rotateX(200deg);
   margin-left: -10.7vw;
@@ -62,8 +56,7 @@ body
   opacity: 0.7;
 }
 
-#left_bottom_logo4
-{
+#left_bottom_logo4 {
   width: 21%;
   transform: rotateX(220deg);
   margin-left: -5vw;
@@ -71,8 +64,7 @@ body
   opacity: 0.7;
 }
 
-#right_bottom_logo4
-{
+#right_bottom_logo4 {
   width: 27%;
   margin-left: 71vw;
   opacity: 0.7;
@@ -80,7 +72,7 @@ body
 
 /* Google calendar */
 .calendar {
-	text-align: center;
+  text-align: center;
 }
 
 .calendar iframe {
@@ -90,175 +82,173 @@ body
 }
 
 .event-container {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 .event-card {
-    display: flex;
-    gap: 2rem;
-    background-color: #1a5f9e; /* A blue that fits the theme */
-    border-radius: 30px;
-    margin: 4rem auto;
-    padding: 3rem;
-    max-width: 1200px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 2rem;
+  background-color: #1a5f9e; /* A blue that fits the theme */
+  border-radius: 30px;
+  margin: 4rem auto;
+  padding: 3rem;
+  max-width: 1200px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .event-text {
-    flex: 3; /* Give more space to text */
+  flex: 3; /* Give more space to text */
 }
 
 .event-text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: white;
-    line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  line-height: 1.2;
 }
 
 .event-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .event-text .highlight {
-    color: #F6BF26; /* yellow from image */
-    font-weight: 700;
+  color: #f6bf26; /* yellow from image */
+  font-weight: 700;
 }
 
 .event-links {
-    display: flex;
-    margin-top: 2rem;
+  display: flex;
+  margin-top: 2rem;
 }
 
 .event-links .col {
-    flex: 1;
+  flex: 1;
 }
 
 .event-links a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .event-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .event-image {
-    flex: 2; /* A bit less space than text */
-    background-color: transparent;
-    border-radius: 20px;
-    min-height: 300px;
-    position: relative;
-    overflow: hidden;
+  flex: 2; /* A bit less space than text */
+  background-color: transparent;
+  border-radius: 20px;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 
 .carousel-track img {
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
 }
 
 .carousel-button.prev {
-    left: 10px;
+  left: 10px;
 }
 
 .carousel-button.next {
-    right: 10px;
+  right: 10px;
 }
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .title {
-        max-width: 90%;
-        padding: 1.5rem 2rem;
-        font-size: 1.8rem;
-    }
+  .title {
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+  }
 
-    .social-links-header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .social-links-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    #header_image {
-        height: 12rem; /* Reduced height for a smaller header */
-        padding-top: 0;
-        background-position: center 30%; /* Adjust background position */
-        margin-bottom: 2rem;
-        box-shadow: 0rem 0.188rem 0.438rem #043162;
-    }
+  #header_image {
+    height: 12rem; /* Reduced height for a smaller header */
+    padding-top: 0;
+    background-position: center 30%; /* Adjust background position */
+    margin-bottom: 2rem;
+    box-shadow: 0rem 0.188rem 0.438rem #043162;
+  }
 
-    .title > div {
-        font-size: 1rem !important; /* Further reduced font size */
-    }
+  .title > div {
+    font-size: 1rem !important; /* Further reduced font size */
+  }
 
-    .event-card {
-        flex-direction: column;
-        padding: 1.2rem;
-        margin: 1.2rem auto;
-        border-radius: 20px;
-    }
+  .event-card {
+    flex-direction: column;
+    padding: 1.2rem;
+    margin: 1.2rem auto;
+    border-radius: 20px;
+  }
 
-    .event-text h2 {
-        font-size: 1.5rem; /* Further reduced font size */
-    }
+  .event-text h2 {
+    font-size: 1.5rem; /* Further reduced font size */
+  }
 
-    .event-text p {
-        font-size: 0.9rem; /* Further reduced font size */
-        line-height: 1.4;
-    }
-    
-    .event-text .highlight {
-        font-size: 1rem; /* Further reduced font size */
-    }
+  .event-text p {
+    font-size: 0.9rem; /* Further reduced font size */
+    line-height: 1.4;
+  }
 
-    .event-links {
-        flex-direction: column;
-    }
-    
-    .event-links .col {
-        margin-bottom: 1rem;
-    }
+  .event-text .highlight {
+    font-size: 1rem; /* Further reduced font size */
+  }
 
-    .event-image {
-        min-height: 250px;
-    }
+  .event-links {
+    flex-direction: column;
+  }
 
-    .calendar iframe {
-        width: 90vw;
-        height: 100vw;
-    }
+  .event-links .col {
+    margin-bottom: 1rem;
+  }
 
-    #left_middle_logo4,
-    #left_bottom_logo4,
-    #right_bottom_logo4 {
-        display: none;
-    }
+  .event-image {
+    min-height: 250px;
+  }
+
+  .calendar iframe {
+    width: 90vw;
+    height: 100vw;
+  }
+
+  #left_middle_logo4,
+  #left_bottom_logo4,
+  #right_bottom_logo4 {
+    display: none;
+  }
 }
-
-

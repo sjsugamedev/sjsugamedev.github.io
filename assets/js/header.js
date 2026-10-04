@@ -1,7 +1,6 @@
-const headerTemplate = document.createElement('template');
+const headerTemplate = document.createElement("template");
 
-headerTemplate.innerHTML =
-`
+headerTemplate.innerHTML = `
   <style>
   *
   {
@@ -177,26 +176,22 @@ headerTemplate.innerHTML =
     </header>
 `;
 
-class Header extends HTMLElement
-{
-    constructor()
-    {
-      super();
-    }
-  
-    connectedCallback()
-    {
-      const shadowRoot = this.attachShadow({ mode: 'open' });
-      shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
 
-      const hamburger = shadowRoot.querySelector('.hamburger');
-      const navLinks = shadowRoot.querySelector('.nav-links');
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
 
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
-    }
+    const hamburger = shadowRoot.querySelector(".hamburger");
+    const navLinks = shadowRoot.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
 }
-  
-customElements.define('header-component', Header);
-  
+
+customElements.define("header-component", Header);

@@ -1,14 +1,12 @@
 /* reset global margins and padding */
-* 
-{ 
+* {
   font-family: "Poppins";
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 /* applies to all elements on page */
-body 
-{
+body {
   height: auto;
   margin: auto;
   background: linear-gradient(
@@ -17,7 +15,7 @@ body
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-    );
+  );
   overflow-x: hidden;
 }
 
@@ -32,7 +30,7 @@ body
     rgba(51, 124, 207, 0.8) 76.7%,
     rgba(51, 124, 207, 0.6) 99.98%,
     rgba(51, 124, 207, 0.3) 99.99%
-    );
+  );
 
   color: white;
 }
@@ -57,10 +55,7 @@ body
   text-align: center;
 }
 
-
-
-.description
-{
+.description {
   margin-bottom: 2rem;
 }
 
@@ -87,7 +82,7 @@ body
 
 /* Highlight specific text */
 .highlight {
-  color: #FFC436; /* Blue color for "Forging Realities" */
+  color: #ffc436; /* Blue color for "Forging Realities" */
 }
 
 /* Corner images */
@@ -117,8 +112,7 @@ body
   top: -2rem; /* Moves the right bracket up */
 }
 
-.video
-{
+.video {
   align-self: center;
   margin-bottom: 3rem;
 }
@@ -154,13 +148,13 @@ body
   overflow: hidden;
   background: #174a7c;
   border-radius: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   color: white;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease;
 }
 .officer-card[open] {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 .officer-summary {
   display: grid;
@@ -189,7 +183,7 @@ body
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .officer-info {
   display: block;
@@ -237,7 +231,11 @@ body
   opacity: 0;
   background: rgba(0, 0, 0, 0.14);
   border-top: 1px solid transparent;
-  transition: max-height 160ms ease-out, opacity 120ms ease-out, padding 160ms ease-out, border-color 160ms ease-out;
+  transition:
+    max-height 160ms ease-out,
+    opacity 120ms ease-out,
+    padding 160ms ease-out,
+    border-color 160ms ease-out;
 }
 .officer-card[open] .officer-about {
   max-height: 48rem;
@@ -280,7 +278,7 @@ body
 
 @media (hover: hover) and (pointer: fine) {
   .officer-card:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   }
 }
 
@@ -313,7 +311,7 @@ body
   background: #174a7c;
   border-radius: 1rem;
   padding: 1.2rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .faq-item h3 {
   color: #ffc436;
@@ -371,7 +369,9 @@ body
     max-width: none;
     box-sizing: border-box;
   }
-  .faq-section, .contact-section, .officers-section {
+  .faq-section,
+  .contact-section,
+  .officers-section {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
@@ -388,7 +388,8 @@ body
     margin-right: 0;
     box-sizing: border-box;
   }
-  .description, .sub-title {
+  .description,
+  .sub-title {
     width: 100%;
     max-width: 100vw;
     margin-left: 0;
@@ -398,7 +399,8 @@ body
     box-sizing: border-box;
     text-align: left;
   }
-  .sub-title, .title {
+  .sub-title,
+  .title {
     font-size: 1.3rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -408,9 +410,9 @@ body
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  description, p {
+  description,
+  p {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
 }
-

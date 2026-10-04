@@ -31,7 +31,11 @@ html {
   line-height: 2.1rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
-  background: linear-gradient(90deg, rgb(48, 114, 200) 0%, rgb(29, 42, 146) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(48, 114, 200) 0%,
+    rgb(29, 42, 146) 100%
+  );
   box-shadow: 0rem 0.188rem 0.438rem #043162;
   min-width: 200px;
   display: inline-block;
@@ -42,19 +46,19 @@ html {
 
 /* Sub-description for title on index.html */
 #header_text_description {
-    font-size: 1.563rem;
+  font-size: 1.563rem;
 }
 
 /* Discord button in header */
 .discord-header-button {
   display: flex;
   align-items: center;
-  background-color: #7B8AEC;
+  background-color: #7b8aec;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: transform 0.2s;
   flex-shrink: 0;
   max-width: 90vw;
@@ -161,4 +165,4 @@ html {
   .social-links-header img {
     width: 32px;
   }
-} 
+}
