@@ -121,10 +121,10 @@ footerTemplate.innerHTML = `
   <nav>
     <div class="social-media-link">
       <!-- used nested img tags in the 'a' tag -->
-      <a href="https://www.instagram.com/sjsugamedev/"><img href=""src="img\\social-media\\instagram.png" alt="logo" class="social-media-logo"></a>
-      <a href="https://www.linkedin.com/company/sjsugamedev/"><img href=""src="img\\social-media\\linkedin.png" alt="logo" class="social-media-logo"></a>
-      <a href="https://www.twitch.tv/sjsugamedev"><img href=""src="img\\social-media\\twitch.png" alt="logo" class="social-media-logo6"></a>
-      <a href="https://www.youtube.com/@SJSUGameDev"><img href=""src="img\\social-media\\youtube.png" alt="logo" class="social-media-logo"></a>
+      <a href="https://www.instagram.com/sjsugamedev/"><img href=""src="assets/img/social-media/instagram.png" alt="logo" class="social-media-logo"></a>
+      <a href="https://www.linkedin.com/company/sjsugamedev/"><img href=""src="assets/img/social-media/linkedin.png" alt="logo" class="social-media-logo"></a>
+      <a href="https://www.twitch.tv/sjsugamedev"><img href=""src="assets/img/social-media/twitch.png" alt="logo" class="social-media-logo6"></a>
+      <a href="https://www.youtube.com/@SJSUGameDev"><img href=""src="assets/img/social-media/youtube.png" alt="logo" class="social-media-logo"></a>
   </div>
   </nav>
   </footer>
