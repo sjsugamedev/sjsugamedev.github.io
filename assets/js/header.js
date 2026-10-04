@@ -155,7 +155,7 @@ headerTemplate.innerHTML = `
   <header>
       <!-- div is for the left side of the header-->
       <div class="navbar-left">
-        <a href="index.html"><img href=""src="assets/img/logo.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img href=""src="assets/img/shared/logo.png" alt="logo" class="logo"></a>
         <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
       </div>
       
