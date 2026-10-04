@@ -1,8 +1,14 @@
+/*
+  REFERENCES:
+  - summer2024.html
+  - summer2025.html (possible summer2024 dupe?)
+*/
+
 .jumbotron {
   margin-bottom: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  background-image: url(../img/about_page2.png);
+  background-image: url(../img/summer/header.png);
   background-position: 50% 15%;
   background-repeat: no-repeat;
   background-size: 100% auto;

@@ -114,7 +114,7 @@ footerTemplate.innerHTML = `
   <footer>
   <!-- reused header navbar for footer -->
   <div class="navbar-left">
-    <a href="index.html"><img href=""src="logo.png" alt="logo" class="logo"></a>
+    <a href="index.html"><img href=""src="assets/img/logo.png" alt="logo" class="logo"></a>
     <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
   </div>
   
