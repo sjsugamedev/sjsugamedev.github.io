@@ -1,6 +1,6 @@
 # SJSU Game Dev Club Website
 
-![Game Dev Club banner](assets\img\shared\banner.png)
+![Game Dev Club banner](assets/img/shared/banner.png)
 
 ## Overview
 
