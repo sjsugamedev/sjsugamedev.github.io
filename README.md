@@ -88,6 +88,10 @@ python -m http.server 8000
 
 4. Open http://localhost:8000/ in your browser to see the website.
 
+## Contributing
+
+Review the project's [contribution guidelines](CONTRIBUTING.md) before contributing. This covers the project workflow, asset organization, naming conventions, and formatting expectations.
+
 ## Maintainers
 
 This website is maintained by Game Dev Club's web development team for the 2026 - 2027 school year.
