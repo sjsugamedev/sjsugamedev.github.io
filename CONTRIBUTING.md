@@ -38,7 +38,7 @@ This is the _recommended_ workflow to keep everything organized and traceable. C
 
 **For small-scale changes:** At minimum, test your changes and write a clear commit message.
 
-**For large-scale changes:** Follow the full workflow.
+**For large-scale changes:** Consider following the full workflow.
 
 ### 1. Open an Issue
 
@@ -56,7 +56,7 @@ Tiny fixes, such as correcting a typo or changing one image reference, do not re
 
 Before making changes, create a branch from `main`.
 
-Use one of the following prefixes:
+Use the [Conventional Branch](https://conventionalbranch.org/) format to name the branch:
 
 | Prefix   | Purpose           | Example                      |
 | -------- | ----------------- | ---------------------------- |
