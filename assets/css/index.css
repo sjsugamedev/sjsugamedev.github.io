@@ -1,0 +1,418 @@
+/* reset global margins and padding */
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+/* applies to all elements on page */
+body {
+  height: auto;
+  margin: auto;
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+  );
+  overflow-x: hidden;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+
+  /* Gradient background */
+  background: linear-gradient(
+    180deg,
+    #003e82 0%,
+    rgba(51, 124, 207, 0.8) 76.7%,
+    rgba(51, 124, 207, 0.6) 99.98%,
+    rgba(51, 124, 207, 0.3) 99.99%
+  );
+
+  color: white;
+}
+
+.sub-title,
+.description {
+  text-align: left; /* Align text content to the left */
+  width: 48%; /* Set a consistent width for alignment */
+  margin: 0 auto; /* Center the element within the parent */
+}
+
+/* spacing between paragraphs */
+.sub-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sub-title-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+/* Catchphrase container */
+.catchphrase {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center; /* Vertically aligns mascots and text */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 2rem; /* Space between images and text */
+  padding: 2rem 0; /* Adds vertical spacing for the section */
+  text-align: center; /* Centers the text inside the text container */
+}
+
+/* Text container styling */
+.catchphrase-text {
+  font-size: 3rem; /* Adjust text size */
+  font-weight: bold;
+  line-height: 1.5; /* Line spacing for multiple lines */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for text */
+}
+
+/* Highlight specific text */
+.highlight {
+  color: #ffc436; /* Blue color for "Forging Realities" */
+}
+
+/* Corner images */
+.corner {
+  width: 4rem; /* Adjust size of the corner brackets */
+}
+
+/* Mascot images */
+.mascot {
+  width: 5rem; /* Mascots size adjustment */
+  position: relative;
+  top: -0.5rem; /* Align mascots vertically with the text */
+}
+
+/* Rotate right corner */
+#right_corner {
+  transform: rotate(180deg); /* Flips the right corner */
+}
+
+/* Bracket Adjustment */
+#left_corner {
+  position: relative;
+  top: 2rem; /* Moves the left bracket down */
+}
+#right_corner {
+  position: relative;
+  top: -2rem; /* Moves the right bracket up */
+}
+
+.video {
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+.officers-section {
+  background: linear-gradient(180deg, #003e82 0%, #1a5f9e 100%);
+  padding: 3rem 0 2rem 0;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+.officers-section h1 {
+  color: #ffc436;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.officers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.officer-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #174a7c;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  color: white;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+.officer-card[open] {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+.officer-summary {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 28rem;
+  min-height: 28rem;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+}
+.officer-summary::-webkit-details-marker {
+  display: none;
+}
+.officer-summary::marker {
+  display: none;
+}
+.officer-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 1.5rem auto 0;
+}
+.officer-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.officer-info {
+  display: block;
+  padding: 1rem 1.2rem 0.5rem;
+}
+.officer-name {
+  display: block;
+  font-size: 1.1rem;
+  color: #ffc436;
+  text-align: center;
+  line-height: 1.25;
+}
+.officer-facts {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.officer-fact {
+  display: block;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  text-align: left;
+}
+.officer-expand {
+  display: block;
+  padding: 1rem 1.2rem 1.25rem;
+  color: #ffc436;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+.officer-expand-close {
+  display: none;
+}
+.officer-card[open] .officer-expand-open {
+  display: none;
+}
+.officer-card[open] .officer-expand-close {
+  display: inline;
+}
+.officer-about {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.2rem;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.14);
+  border-top: 1px solid transparent;
+  transition:
+    max-height 160ms ease-out,
+    opacity 120ms ease-out,
+    padding 160ms ease-out,
+    border-color 160ms ease-out;
+}
+.officer-card[open] .officer-about {
+  max-height: 48rem;
+  padding: 1.2rem;
+  opacity: 1;
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+.officer-card.is-opening .officer-about,
+.officer-card.is-closing .officer-about {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  border-top-color: transparent;
+}
+.officer-about-label {
+  display: block;
+  color: #ffc436;
+  font-weight: 700;
+}
+.officer-about-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: #fff;
+}
+.officer-about-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  text-align: left;
+}
+.officer-about-list a {
+  color: #ffc436;
+  text-decoration: underline;
+}
+.officer-card:focus-within {
+  outline: 3px solid rgba(255, 196, 54, 0.9);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .officer-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .officer-card,
+  .officer-about {
+    transition: none;
+  }
+}
+
+.faq-section {
+  background: #003e82;
+  color: white;
+  padding: 3rem 0 2rem 0;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+.faq-section h1 {
+  color: #ffc436;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.faq-item {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  background: #174a7c;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-item h3 {
+  color: #ffc436;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.faq-contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+.faq-contact h4 {
+  color: #ffc436;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.faq-contact p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-section {
+  background: #1a5f9e;
+  color: white;
+  padding: 2.5rem 0 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+.contact-section h1 {
+  color: #ffc436;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+.contact-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .officers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .officer-card {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+  .faq-section,
+  .contact-section,
+  .officers-section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    margin-top: 2rem;
+    max-width: 100vw;
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .description,
+  .sub-title {
+    width: 100%;
+    max-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .sub-title,
+  .title {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  description,
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
