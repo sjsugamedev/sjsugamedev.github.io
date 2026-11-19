@@ -24,16 +24,27 @@ headerTemplate.innerHTML = `
   {
     display: flex;
     align-items: center;
-    margin-right: auto;
+  }
+
+  .navbar-center
+  {
+    display: flex;
+    align-items: center;
+    justify-self: center;
   }
 
   header
   {
     background-color: #043162;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     padding: .5rem 1.5rem ;
+  }
+
+  header > nav
+  {
+    justify-self: end;
   }
 
   .logo
@@ -158,10 +169,14 @@ headerTemplate.innerHTML = `
         <a href="index.html"><img href=""src="assets/img/shared/logo.png" alt="logo" class="logo"></a>
         <a href="index.html" class="sjsu-game-dev">SJSU Game Dev Club</a>
       </div>
-      
+
+      <div class="navbar-center">
+        <a href="https://gdconf.com/"><img href=""src="assets/img/index/GDC2027.gif" alt="GDC Banner"></a>
+      </div>
+
       <nav>
         <ul class="nav-links">
-          
+
           <li> <a href="summer2025.html">SUMMER EVENT</a></li>
           <li> <a href="index.html">About</a></li>
           <li> <a href="games.html">Games</a></li>
